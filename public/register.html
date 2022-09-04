@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Скрепецкий">
+    <meta name="generator" content="Скрепецкий">
+    <title>Регистрация/Вход | Семен Скрепецкий Картины</title>
+
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="/wp-content/img/i.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="email" >
+      <label for="email">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="password" placeholder="Password">
+      <label for="password">Password</label>
+    </div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="button" id="button_register">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>
+<script type="module">
+   // https://firebase.google.com/docs/web/setup#available-libraries
+   const firebaseConfig = {
+        apiKey: "AIzaSyBoC2t2yfoMY6dAU67HuQerDeygvgK7uIo",
+        authDomain: "skrepeckiy.firebaseapp.com",
+        databaseURL: "https://skrepeckiy-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "skrepeckiy",
+        storageBucket: "skrepeckiy.appspot.com",
+        messagingSenderId: "84562251992",
+        appId: "1:84562251992:web:e820e3303f1221f2ee87ad",
+        measurementId: "G-VZHLXLSYRX"
+    }
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js"
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"
+  import { getFirestore, doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js"
+
+  var admin_uid = 0
+  const app = initializeApp(firebaseConfig)
+  const auth = getAuth(app)                 
+  const enter_with_email_and_password = function(pageEmail, pagePassword){
+    signInWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
+        const user = userCredential.user;
+        console.log('uid', user.uid)
+        window.localStorage.setItem('email', pageEmail)
+        window.localStorage.setItem('password', pagePassword)
+        window.localStorage.setItem('uid', user.uid) 
+        console.log( window.localStorage) 
+        is_admin_function(user.uid) 
+
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+    })
+  }  
+
+
+  document.getElementById('button_register').addEventListener('click', ()=> {
+   var pageEmail = document.getElementById('email').value 
+   var pagePassword = document.getElementById('password').value  
+   createUserWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
+      const user = userCredential.user
+      window.localStorage.setItem('email', pageEmail)
+      window.localStorage.setItem('password', pagePassword)
+      window.localStorage.setItem('uid', user.uid)
+      enter_with_email_and_password(pageEmail, pagePassword)
+    }).catch((error) => {
+      const errorCode = error.code
+      const errorMessage = error.message
+      enter_with_email_and_password(pageEmail, pagePassword)       
+    })
+  })
+
+  
+
+  async function is_admin_function(key_admin){
+    const firestore = getFirestore(app)
+    const docRef = doc(firestore, key_admin, key_admin);
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      if(docSnap.data().uid == key_admin){
+        window.location.href = '/admin.html'
+      }
+    } else {
+      window.location.href = '/user.html'
+    }
+  }
+ 
+
+
+</script> 
+</body>
+</html>

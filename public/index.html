@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
   <head>
+    <!-- firebase admin loj.rus@gmail.com -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -13,16 +14,16 @@
     <meta name="msapplication-TileImage" content="/img/i.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="theme-color" content="#FFFFFF">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/i.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/i2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/img/i.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/wp-content/img/i2.png">
 
     <link rel="canonical" href="https://skrepeckiy.web.app">
     <meta name="robots" content="index,follow, all">
-    <link rel="apple-touch-icon" href="/assets/img/i.png" sizes="180x180">
-    <link rel="icon" href="/assets/img/i1.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/assets/img/i2.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/wp-content/img/i.png" sizes="180x180">
+    <link rel="icon" href="/wp-content/img/i1.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/wp-content/img/i2.png" sizes="16x16" type="image/png">
     <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#ffffff">
-    <link rel="icon" href="/assets/img/favicon.ico">
+    <link rel="icon" href="/wp-content/img/favicon.ico">
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
@@ -40,9 +41,7 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Страницы</h4>
               <ul class="list-unstyled">
-                <li><a href="/admin" class="text-white">Админ</a></li>
-                <li><a href="#/like" class="text-white">Like on Facebook</a></li>
-                <li><a href="#/email" class="text-white">Email me</a></li>
+                <li><a href="/register.html" class="text-white">Регистрация/Вход</a></li>
               </ul>
             </div>
           </div>
@@ -64,7 +63,7 @@
     <main id="main_content_id">    
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Официальный сайт Семена Скрепецкого</h1>
+          <h1 class="jumbotron-heading" id="h1_page_title">Официальный сайт Семена Скрепецкого</h1>
           <p class="lead text-muted">Семён Скрепецкий, почётный житель Немногопотерпетьевска, лучший сборщик валежника, заместитель директора местного мухопитомника, друг Ватки, собутыльник Семёныча</p>
           <p>
             <a href="#" class="btn btn-primary my-2">Main call to action</a>
@@ -117,7 +116,7 @@
       const storage = getStorage(app)             
       const analytics = getAnalytics(app)       
     </script> 
-    <script type="module" src="/assets/js/firestore.data.js"></script>
+    <script type="module" src="/wp-content/js/firestore.js"></script>
     
 
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -132,37 +131,10 @@
      // if ('serviceWorker' in navigator) { window.addEventListener('load', function() {  navigator.serviceWorker.register('/sw.js'); }); }
     </script>
     <script>
-      var tareas = new Tareas();
-      function Tareas (){};
-      Tareas.prototype.CrearDB = function (){
-          var nombrecorto = 'SuzdalenkoDataBase';
-          var version = '1.0';
-          var nombrebase = 'Nombre_Corto';
-          var size = 50*1024*1024;    
-          var db = openDatabase(nombrecorto, version, nombrebase, size);
-          return db;
-      };
-      Tareas.prototype.Tabla = function (){
-          var db, SqlLista;
-          db = tareas.CrearDB();
-          SqlLista = "CREATE TABLE IF NOT EXISTS TareasTabla(fila integer primary key, tarea text)"
-          db.transaction(function (tx){
-              tx.executeSql(SqlLista);
-          });
-          SqlInsert = 'INSERT INTO Tareas(fila, tarea) VALUES(?,?)';
-          for(let i = 0; i < 10; i++){
-            db.transaction(function (tx){
-            tx.executeSql(SqlInsert,[i, "hole " + i]);
-          })   
-          }
-         
-
-      };
-
-      tareas.Tabla();
+     
 
 
-
+      
     </script>
   </body>
 </html>

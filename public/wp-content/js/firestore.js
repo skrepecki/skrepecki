@@ -30,8 +30,8 @@ function returnSimpleItem(title, description, img, slug){
             <p class="card-text">`+title+` `+sort_description+`</p>
             <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-            <a href="/item/#`+slug+`"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <a href="/item.html#`+slug+`"><button type="button" class="btn btn-sm btn-outline-secondary">Картина</button></a>
+            <a href="/item.html#`+slug+`"><button type="button" class="btn btn-sm btn-outline-secondary">Комметарий</button></a>
             </div><small class="text-muted">9 mins</small></div></div></div></div>`
 }
 
