@@ -106,10 +106,10 @@
     </script>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js"
-      import { getAuth  } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"
-      import { getDatabase  } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js"
-      import { getStorage  } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js"
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"
+      import { getAuth  }      from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"
+      import { getDatabase  }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js"
+      import { getStorage  }   from "https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js"
+      import { getAnalytics }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"
     
       const app = initializeApp(firebaseConfig)
       const auth = getAuth(app)         
@@ -117,19 +117,52 @@
       const storage = getStorage(app)             
       const analytics = getAnalytics(app)       
     </script> 
-        
-        <script type="module" src="/assets/js/firestore.data.js"></script>
-        <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="/assets/js/firestore.data.js"></script>
     
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM3XX1C5ET"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());    
-          gtag('config', 'G-GM3XX1C5ET'); // https://analytics.google.com/analytics/web/#/p330344711/reports/intelligenthome?params=_u..nav%3Dmaui
-        </script>
-        <script>
-          if ('serviceWorker' in navigator) { window.addEventListener('load', function() {  navigator.serviceWorker.register('/sw.js'); }); }
-        </script>
+
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM3XX1C5ET"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());    
+      gtag('config', 'G-GM3XX1C5ET'); // https://analytics.google.com/analytics/web/#/p330344711/reports/intelligenthome?params=_u..nav%3Dmaui
+    </script>
+    <script>
+     // if ('serviceWorker' in navigator) { window.addEventListener('load', function() {  navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
+    <script>
+      var tareas = new Tareas();
+      function Tareas (){};
+      Tareas.prototype.CrearDB = function (){
+          var nombrecorto = 'SuzdalenkoDataBase';
+          var version = '1.0';
+          var nombrebase = 'Nombre_Corto';
+          var size = 50*1024*1024;    
+          var db = openDatabase(nombrecorto, version, nombrebase, size);
+          return db;
+      };
+      Tareas.prototype.Tabla = function (){
+          var db, SqlLista;
+          db = tareas.CrearDB();
+          SqlLista = "CREATE TABLE IF NOT EXISTS TareasTabla(fila integer primary key, tarea text)"
+          db.transaction(function (tx){
+              tx.executeSql(SqlLista);
+          });
+          SqlInsert = 'INSERT INTO Tareas(fila, tarea) VALUES(?,?)';
+          for(let i = 0; i < 10; i++){
+            db.transaction(function (tx){
+            tx.executeSql(SqlInsert,[i, "hole " + i]);
+          })   
+          }
+         
+
+      };
+
+      tareas.Tabla();
+
+
+
+    </script>
   </body>
 </html>
