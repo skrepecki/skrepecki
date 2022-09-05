@@ -7,7 +7,15 @@
     <title>Admin</title>
 </head>
 <body>
-    <p>admin</p>
+    <section class="admin_section">
+        <input type="file" placeholder="time" id="time">
+        <input type="text" placeholder="time" id="time">
+        <input type="text" placeholder="title" id="title">
+        <textarea></textarea>
+        <input type="text" placeholder="slug" id="slug">
+        <input type="button" value="Save" id="save_item">
+    </section>
+    <section id="admin_section" class="admin_section">admin</section>
     <script src="/wp-content/js/admin.get_list_images.js"></script>
     <script type="module">
         const firebaseConfig = {
@@ -55,5 +63,12 @@
         document.title = window.localStorage.getItem('email') + ' ' + window.localStorage.getItem('password')
         console.log('email=' + window.localStorage.getItem('email') + ', ' + 'password=' + window.localStorage.getItem('password') + ', ' + 'uid=' + window.localStorage.getItem('uid'))
     </script>
+    <style>
+        .admin_section{margin-left: 5%; width: 90%;}
+        .image{width: 200px; height: auto;}
+        input, textarea{display: block; width: 99%; margin-top: 11px;}
+        textarea{height: 111px;}
+        #save_item{width: 70px; margin-bottom: 22px;}
+    </style>
 </body>
 </html>
