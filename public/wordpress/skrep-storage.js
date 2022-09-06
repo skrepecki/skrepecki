@@ -1,10 +1,10 @@
-let skrep_storage = {
-    "1": {
-        title: "title",
-        description : "description",
-        image: "url"
+const skrep_storage = {
+    "1110": {
+        title: "скрепозавры",
+        description : "скрепозавры",
+        image: "скрепозавры.jpg"
     },
-    "2": {
+    "1111": {
         title: "title",
         description : "description",
         image: "url"
