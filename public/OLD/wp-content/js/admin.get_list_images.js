@@ -2,7 +2,7 @@ function get_list_all_images(docsSnap){
     let html_item_content = ''
     docsSnap.forEach(doc => {
         html_item_content +=  create_item_element(doc.data().img, doc.data().title, doc.data().description, doc.data().slug, doc.data().time)
-        console.log(doc.data());
+       // console.log(doc.data());
         
     }) 
     document.getElementById('admin_section').innerHTML = html_item_content
@@ -18,3 +18,4 @@ function create_item_element(image, title, description, slug, time){
         <input type="button" value="Save" id="save_item">
         </div>`
 }
+

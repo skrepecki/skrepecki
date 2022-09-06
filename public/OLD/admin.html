@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +8,14 @@
 </head>
 <body>
     <section class="admin_section">
-        <input type="file" placeholder="time" id="time">
+        <input type="file" placeholder="time" id="myFile">
         <input type="text" placeholder="time" id="time">
         <input type="text" placeholder="title" id="title">
-        <textarea></textarea>
+        <textarea id="description"></textarea>
         <input type="text" placeholder="slug" id="slug">
         <input type="button" value="Save" id="save_item">
     </section>
     <section id="admin_section" class="admin_section">admin</section>
-    <script src="/wp-content/js/admin.get_list_images.js"></script>
     <script type="module">
         const firebaseConfig = {
             apiKey: "AIzaSyBoC2t2yfoMY6dAU67HuQerDeygvgK7uIo",
@@ -60,9 +59,11 @@
         }
     </script>
     <script>
-        document.title = window.localStorage.getItem('email') + ' ' + window.localStorage.getItem('password')
-        console.log('email=' + window.localStorage.getItem('email') + ', ' + 'password=' + window.localStorage.getItem('password') + ', ' + 'uid=' + window.localStorage.getItem('uid'))
+        document.title = window.localStorage.getItem('email') + ' ' + window.localStorage.getItem('password')        
     </script>
+    <script src="/wp-content/js/admin.get_list_images.js"></script>
+    <script src="/wp-content/js/admin.trasliterate.js"></script>
+    <script type="module" src="/wp-content/js/admin.save_new_item.js"></script>
     <style>
         .admin_section{margin-left: 5%; width: 90%;}
         .image{width: 200px; height: auto;}
