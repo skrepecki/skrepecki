@@ -3,9 +3,9 @@
     "short_name":"Семен Скрепецкий",
     "theme_color":"#fff",
     "icons":[
-        {"src":"/wp-content/img/i.png","sizes":"192x192","type":"image/png"},
-        {"src":"/wp-content/img/i2.png","sizes":"512x512","type":"image/png"},
-        {"src":"/wp-content/img/i3.png","sizes":"192x192","type":"image/png","purpose":"maskable"},
-        {"src":"/wp-content/img/i4.png","sizes":"512x512","type":"image/png","purpose":"maskable"}],
+        {"src":"/wordpress/img/i.png","sizes":"192x192","type":"image/png"},
+        {"src":"/wordpress/img/i2.png","sizes":"512x512","type":"image/png"},
+        {"src":"/wordpress/img/i3.png","sizes":"192x192","type":"image/png","purpose":"maskable"},
+        {"src":"/wordpress/img/i4.png","sizes":"512x512","type":"image/png","purpose":"maskable"}],
         "start_url":".","display":"standalone","background_color":"#000000"
     }
