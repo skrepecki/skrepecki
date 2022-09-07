@@ -1,3 +1,5 @@
+// listado de imagenes en la pagina principal
+
 let div_images_gallery = document.getElementById('div_images_gallery')
 let content_page = ''
 console.log(skrep_storage)
