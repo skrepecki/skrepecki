@@ -10,7 +10,7 @@ function set_custom_image_top(image_id){
         image_description.innerText = skrep_storage[image_id].description
     let download_link = document.getElementById('download_link')
         download_link.href = 'https://raw.githubusercontent.com/diseno-web-cantabria/skrepeckiy.web.app/main/public/wordpress/skrep-img/'+skrep_storage[image_id].image  
-        download_link.download = 'https://raw.githubusercontent.com/diseno-web-cantabria/skrepeckiy.web.app/main/public/wordpress/skrep-img/'+skrep_storage[image_id].image        
+        download_link.download = ''+skrep_storage[image_id].image        
 }
 
 function set_random_images_bottom(){
