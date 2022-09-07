@@ -1,7 +1,7 @@
 // pagina de una imagen en concreto su titulo y descripcion, comentarios
 
 function set_custom_image_top(image_id){
-    document.title = skrep_storage[image_id].title
+    document.title = skrep_storage[image_id].title + ' | Семен Скрепецкий'
     let img_html = document.getElementById('img_html')
         img_html.src = '/wordpress/skrep-img/' + skrep_storage[image_id].image
     let title_custom_image = document.getElementById('title_custom_image')
@@ -25,7 +25,7 @@ function set_random_images_bottom(){
 function create_custom_child_item(id){
     return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <figure class="effect-ming tm-video-item">
-                <img src="/wordpress/skrep-img/`+skrep_storage[id].image+`" alt="`+skrep_storage[id].title+`" class="img-fluid">
+                <img src="/wordpress/skrep-img/`+skrep_storage[id].image+`" alt="`+skrep_storage[id].title+`" class="img-fluid index_page_list_image">
                 <figcaption class="d-flex align-items-center justify-content-center">
                     <h2>`+skrep_storage[id].title+`</h2>
                     <a href="#image-`+id+`">`+skrep_storage[id].title+`</a>
