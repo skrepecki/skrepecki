@@ -7,7 +7,10 @@ function set_custom_image_top(image_id){
     let title_custom_image = document.getElementById('title_custom_image')
         title_custom_image.innerText = skrep_storage[image_id].title  
     let image_description = document.getElementById('image_description')
-        image_description.innerText = skrep_storage[image_id].description      
+        image_description.innerText = skrep_storage[image_id].description
+    let download_link = document.getElementById('download_link')
+        download_link.href = 'https://raw.githubusercontent.com/diseno-web-cantabria/skrepeckiy.web.app/main/public/wordpress/skrep-img/'+skrep_storage[image_id].image  
+        download_link.download = 'https://raw.githubusercontent.com/diseno-web-cantabria/skrepeckiy.web.app/main/public/wordpress/skrep-img/'+skrep_storage[image_id].image        
 }
 
 function set_random_images_bottom(){
