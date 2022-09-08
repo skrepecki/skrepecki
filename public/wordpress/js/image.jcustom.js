@@ -1,7 +1,6 @@
 // pagina de una imagen en concreto su titulo y descripcion, comentarios
 
 function set_custom_image_top(image_id){
-    document.title = skrep_storage[image_id].title + ' | Семен Скрепецкий'
     let img_html = document.getElementById('img_html')
         img_html.src = '/wordpress/skrep-img/' + skrep_storage[image_id].image
     let title_custom_image = document.getElementById('title_custom_image')
