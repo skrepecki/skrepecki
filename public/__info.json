@@ -1,3 +1,7 @@
 {
-    "hosting":"firebase hosting loj.rus@gmail.com"
+    "hosting":"firebase hosting loj.rus@gmail.com",
+    "power bi url": "\\192.168.1.70\datosproconsi\listados\ventas\powerbi.csv \\labaro\datosproconsi\listados\ventas\powerbi.csv",
+    "acceso": {
+        "froxadom/administrador 4615"
+    }
 }

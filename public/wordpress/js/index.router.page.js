@@ -32,6 +32,9 @@ function show_current_page_data(){
         switch(current_page){
             case '#video':              ul_list_links[1].classList.add('active'); break
             case '#registration-login': ul_list_links[2].classList.add('active'); break
+            case '#robert-burdai':      ul_list_links[3].classList.add('active'); 
+            
+               break
         } 
      }
 

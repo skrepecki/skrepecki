@@ -3,15 +3,15 @@
 let page_titles = {
     index: {
         title: "Семен Скрепецкий Картины",
-        description: "Семен Скрепецкий"
     },
     video:{
         title: "Видео | Семен Скрепецкий Картины",
-        description: "Видео"
     },
     "registration-login":{
         title: "Логин | Семен Скрепецкий Картины",
-        description: "Логин"
+    },
+    "robert":{
+        title: "Роберт Бурдай",
     }
 }
 
@@ -37,6 +37,10 @@ function set_title_page(page_has){
                 set_title_difinition( page_titles["registration-login"].title ) 
 
                 break
+            case '#robert-burdai': 
+                set_title_difinition( page_titles["robert"].title ) 
+
+                break    
         } 
     }
 }
