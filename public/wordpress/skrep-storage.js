@@ -380,9 +380,9 @@ const skrep_storage = [
         description: " Семён Скрепецкий, рисунок, уголь, бумага, А3. Кто то сказал что на главу роскосмоса Митю Рогозин мало карикатур.. Ловите. #рогозин #карикатура #рисунок",
         image: "рогозин осваивает марс.jpg"
     },{
-        title: "роскозмос.jpg",
+        title: "роскозмос",
         description: "Семён Скрепецкий, рисунок, уголь, бумага, А3. Российский козачий мотоциклетный союз, стальной кулак российского козачества. инстаграм с картинами Скрепецкого",
-        image: "роскозмос"
+        image: "роскозмос.jpg"
     },{
         title: "газпром мечты сбываются",
         description: "Семён Скрепецкий, рисунок, уголь, бумага, А3",
@@ -582,247 +582,471 @@ const skrep_storage = [
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0132.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0133.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0134.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0135.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0136.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0137.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0138.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0139.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0140.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0141.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0142.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0143.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0144.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0145.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0146.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0147.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0148.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0149.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0150.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0151.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0152.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0153.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0154.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0155.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0156.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0157.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0158.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0159.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0160.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0161.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0162.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0163.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0164.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0165.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0166.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0167.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0168.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0169.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0170.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0171.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0172.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0173.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0174.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0175.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0176.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0177.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0178.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0179.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0180.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0181.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0182.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0183.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0184.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0185.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0186.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0187.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0188.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0189.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0190.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0191.jpg"
     },{
         title: "",
         description: "",
-        image: ""
+        image: "0192.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0193.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0194.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0195.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0196.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0197.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0198.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0199.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0200.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0201.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0202.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0203.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0204.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0205.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0206.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0207.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0208.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0209.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0210.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0211.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0212.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0213.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0214.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0215.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0216.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0217.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0218.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0219.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0220.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0221.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0222.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0223.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0224.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0225.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0226.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0227.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0228.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0229.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0230.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0231.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0232.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0233.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0234.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0235.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0236.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0237.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0238.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0239.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0240.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0241.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0242.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0243.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0244.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0245.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0246.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0247.jpg"
+    },{
+        title: "",
+        description: "",
+        image: "0248.jpg"
     },{
         title: "",
         description: "",
