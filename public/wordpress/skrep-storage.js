@@ -1047,10 +1047,6 @@ const skrep_storage = [
         title: "",
         description: "",
         image: "0248.jpg"
-    },{
-        title: "",
-        description: "",
-        image: ""
     }
 ]
 
