@@ -924,128 +924,128 @@ const skrep_storage = [
         description: "",
         image: "0217.jpg"
     },{
-        title: "",
-        description: "",
+        title: "ух",
+        description: "ух",
         image: "0218.jpg"
     },{
-        title: "",
-        description: "",
+        title: "обама",
+        description: "обама",
         image: "0219.jpg"
     },{
-        title: "",
-        description: "",
+        title: "обама",
+        description: "обама",
         image: "0220.jpg"
     },{
-        title: "",
-        description: "",
+        title: "хутин",
+        description: "хутин",
         image: "0221.jpg"
     },{
-        title: "",
-        description: "",
+        title: "дедывоевале",
+        description: "дедывоевале",
         image: "0222.jpg"
     },{
-        title: "",
-        description: "",
+        title: "пенсионная реформа",
+        description: "пенсионная реформа",
         image: "0223.jpg"
     },{
-        title: "",
-        description: "",
+        title: "рогозин",
+        description: "рогозин",
         image: "0224.jpg"
     },{
-        title: "",
-        description: "",
+        title: "дмитрий куприн куприяниха",
+        description: "дмитрий куприн куприяниха",
         image: "0225.jpg"
     },{
-        title: "",
-        description: "",
+        title: "всрай",
+        description: "всрай",
         image: "0226.jpg"
     },{
-        title: "",
-        description: "",
+        title: "аналоновнетная сракетородица",
+        description: "аналоновнетная сракетородица",
         image: "0227.jpg"
     },{
-        title: "",
-        description: "",
+        title: "аналоновнетная сракетородица",
+        description: "аналоновнетная сракетородица",
         image: "0228.jpg"
     },{
-        title: "",
-        description: "",
+        title: "сросиюшка",
+        description: "сросиюшка",
         image: "0229.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бутылочка для гуского мужика",
+        description: "бутылочка для гуского мужика",
         image: "0230.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бояра",
+        description: "бояра",
         image: "0231.jpg"
     },{
-        title: "",
-        description: "",
+        title: "путя",
+        description: "путя",
         image: "0232.jpg"
     },{
-        title: "",
-        description: "",
+        title: "ватничек",
+        description: "ватничек",
         image: "0233.jpg"
     },{
-        title: "",
-        description: "",
+        title: "сракета",
+        description: "сракета",
         image: "0234.jpg"
     },{
-        title: "",
-        description: "",
+        title: "виличие сросии",
+        description: "виличие сросии",
         image: "0235.jpg"
     },{
-        title: "",
-        description: "",
+        title: "гуский мужик",
+        description: "гуский мужик",
         image: "0236.jpg"
     },{
-        title: "",
-        description: "",
+        title: "тряпошные волки",
+        description: "тряпошные волки",
         image: "0237.jpg"
     },{
-        title: "",
-        description: "",
+        title: "мухопитомник",
+        description: "мухопитомник",
         image: "0238.jpg"
     },{
-        title: "",
-        description: "",
+        title: "экскримиская книженка",
+        description: "экскримиская книженка",
         image: "0239.jpg"
     },{
-        title: "",
-        description: "",
+        title: "экскримиская книженка",
+        description: "экскримиская книженка",
         image: "0240.jpg"
     },{
-        title: "",
-        description: "",
+        title: "всрай",
+        description: "всрай",
         image: "0241.jpg"
     },{
-        title: "",
-        description: "",
+        title: "всрай",
+        description: "всрай",
         image: "0242.jpg"
     },{
-        title: "",
-        description: "",
+        title: "срамат хутина",
+        description: "срамат хутина",
         image: "0243.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бдят",
+        description: "бдят",
         image: "0244.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бдят",
+        description: "бдят",
         image: "0245.jpg"
     },{
-        title: "",
-        description: "",
+        title: "духовная скрепа",
+        description: "духовная скрепа",
         image: "0246.jpg"
     },{
-        title: "",
-        description: "",
+        title: "духовная скрепа",
+        description: "духовная скрепа",
         image: "0247.jpg"
     },{
-        title: "",
-        description: "",
+        title: "добро пожаловать на сросию",
+        description: "добро пожаловать на сросию",
         image: "0248.jpg"
     }
 ]

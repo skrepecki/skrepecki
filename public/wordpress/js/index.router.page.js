@@ -15,7 +15,7 @@ function show_current_page_data(){
 
      if(!current_page || current_page.length < 3){                                  // index page
         index_page_main_content.style.display = 'block'
-        div_banner_top.style.backgroundImage = "url('/wordpress/img/top_banner.jpg')"
+        div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner.jpg')"
         ul_list_links[0].classList.add('active')  
         custom_item_image.style.display = 'none'
         section_rober_burdai.style.display = 'none'
@@ -31,7 +31,7 @@ function show_current_page_data(){
       } else  {                                                                      // menu 
         index_page_main_content.style.display = 'none'
         section_rober_burdai.style.display = 'none'
-        div_banner_top.style.backgroundImage = "url('/wordpress/img/top_banner2.jpg')"
+        div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg')"
         custom_item_image.style.display = 'none'
         switch(current_page){
             case '#video':              ul_list_links[1].classList.add('active'); break
