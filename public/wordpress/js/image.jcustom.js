@@ -4,8 +4,10 @@ function set_custom_image_top(image_id){
     let img_html = document.getElementById('img_html')
         img_html.src = 'https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/' + skrep_storage[image_id].image
         img_html.alt = skrep_storage[image_id].title + ' - Семен Скрепецкий - Скрепоносный Бузотер'
+    
     let title_custom_image = document.getElementById('title_custom_image')
-        title_custom_image.innerText = skrep_storage[image_id].title  
+        title_custom_image.innerHTML = '<a class="navbar-brand" href="#image-'+image_id+'" target="_blank">'+skrep_storage[image_id].title+'</a>'
+
     let image_description = document.getElementById('image_description')
         image_description.innerText = skrep_storage[image_id].description
     let download_link = document.getElementById('download_link')
