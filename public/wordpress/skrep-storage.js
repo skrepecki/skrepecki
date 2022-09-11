@@ -1,5 +1,5 @@
 const skrep_storage = [
-    {
+      {
         title: "Мальчик надувающий жабу",
         description: "Мальчик надувающий жабу",
         image: "Мальчик надувающий жабу.jpg"
