@@ -8,5 +8,5 @@ for(let i = 0; i < skrep_storage.length; i++){
 footer_list_links.innerHTML = html_links_result
 
 function return_one_link(i, title){
-    return `<div class="col-lg-3 col-md-3 col-sm-6 col-6"><a href="https://skrepeckiy.web.app/#image-`+i+`" class="tm-text-gray d-block mb-2" target="_blank">`+title+`</a></div>`
+    return `<div class="col-lg-3 col-md-3 col-sm-6 col-6"><a href="https://skrepeckiy.eu/#image-`+i+`" class="tm-text-gray d-block mb-2" target="_blank">`+title+`</a></div>`
 }
