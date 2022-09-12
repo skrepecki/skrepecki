@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /sftp.php
+
+Host: skrepeckiy.eu
+Sitemap: https://skrepeckiy.eu/sitemap.xml
