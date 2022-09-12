@@ -1,9 +1,7 @@
 let footer_list_links = document.getElementById('footer_list_links')
 let html_links_result = ''
 
-for(let i = 0; i < skrep_storage.length; i++){
-    html_links_result += return_one_link(i, skrep_storage[i].title)
-}
+for(let i = 0; i < skrep_storage.length; i++) html_links_result += return_one_link(i, skrep_storage[i].title)
 
 footer_list_links.innerHTML = html_links_result
 
