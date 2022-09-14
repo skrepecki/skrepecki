@@ -15,20 +15,6 @@ const app = initializeApp(firebaseConfig)
 const firestore = getFirestore(app)
 const auth = getAuth(app) 
 
-const enter_with_email_and_password = function(pageEmail, pagePassword){
-    signInWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
-        const user = userCredential.user;
-        console.log('uid', user.uid)
-        window.localStorage.setItem('email', pageEmail)
-        window.localStorage.setItem('password', pagePassword)
-        window.localStorage.setItem('uid', user.uid) 
-        console.log(window.localStorage) 
-    }).catch((error) => {git
-        const errorCode = error.code;
-        const errorMessage = error.message;
-    })
-}  
-
 document.getElementById('login_button').addEventListener('click', () =>{
     let pageEmail    = document.getElementById('email').value
     let pagePassword = document.getElementById('password').value
@@ -44,6 +30,19 @@ document.getElementById('login_button').addEventListener('click', () =>{
         enter_with_email_and_password(pageEmail, pagePassword)       
       })
 })
+
+const enter_with_email_and_password = function(pageEmail, pagePassword){
+    signInWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
+        const user = userCredential.user;
+        window.localStorage.setItem('email', pageEmail)
+        window.localStorage.setItem('password', pagePassword)
+        window.localStorage.setItem('uid', user.uid)
+        window.location.reload() 
+    }).catch((error) => {git
+        const errorCode = error.code;
+        const errorMessage = error.message;
+    })
+}  
 
 push_data_in_form()
 
