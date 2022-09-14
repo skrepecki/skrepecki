@@ -13,6 +13,8 @@ function show_current_page_data(){
      let div_banner_top = document.getElementById('div_banner_top')
      let custom_item_image = document.getElementById('custom_item_image')
      let section_login = document.getElementById('section_login')
+     let navbarSupportedContent = document.getElementById('navbarSupportedContent')
+     navbarSupportedContent.classList.remove('show')
 
      index_page_main_content.style.display = 'none'
      custom_item_image.style.display       = 'none'
