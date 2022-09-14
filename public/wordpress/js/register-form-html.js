@@ -1,5 +1,5 @@
 const register_login_form = `
-<div class="container-fluid tm-mt-60">
+<div class="container-fluid tm-mt-60" id="form-login-register">
         <h2 class="tm-text-primary mb-5">Регистрация/Вход</h2>
         <form id="contact-form" class="tm-contact-form mx-auto">
           <div class="form-group">

@@ -48,13 +48,13 @@ document.getElementById('login_button').addEventListener('click', () =>{
 push_data_in_form()
 
 function push_data_in_form(){
-  if(localStorage.getItem('email') && localStorage.getItem('password') && localStorage.getItem('uid')){
-    signInWithEmailAndPassword(auth, localStorage.getItem('email'), localStorage.getItem('password')).then((userCredential) => {
-        const user = userCredential.user;
-        document.getElementById('email').value            = localStorage.getItem('email')
-        document.getElementById('password').value         = localStorage.getItem('password')
-        document.getElementById('navbar-brand').innerText = localStorage.getItem('email')
-    })  
-      
-  }
+    if(localStorage.getItem('email') && localStorage.getItem('password') && localStorage.getItem('uid')){
+        signInWithEmailAndPassword(auth, localStorage.getItem('email'), localStorage.getItem('password')).then((userCredential) => {
+            const user = userCredential.user;
+            document.getElementById('email').value            = localStorage.getItem('email')
+            document.getElementById('password').value         = localStorage.getItem('password')
+            document.getElementById('navbar-brand').innerText = localStorage.getItem('email')
+            document.getElementById('form-login-register').innerHTML = '<h4>Вы вошли как ' + localStorage.getItem('email') + '<h4></br></br>'
+        })  
+    }
 }
