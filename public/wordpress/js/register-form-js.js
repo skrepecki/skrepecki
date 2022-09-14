@@ -31,7 +31,7 @@ document.getElementById('login_button').addEventListener('click', () =>{
       })
 })
 
-const enter_with_email_and_password = function(pageEmail, pagePassword){
+function enter_with_email_and_password(pageEmail, pagePassword){
     signInWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
         const user = userCredential.user;
         window.localStorage.setItem('email', pageEmail)
