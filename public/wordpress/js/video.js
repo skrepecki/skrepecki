@@ -8,7 +8,6 @@ function trate_video(){
         tm_video.play()
         tm_video.loop = true
     } else {
-        tm_video.autoplay = false
         tm_video.style.display = 'none'
         tm_video.pause()
     }
