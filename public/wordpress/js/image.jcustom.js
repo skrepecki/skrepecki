@@ -22,8 +22,6 @@ function set_random_images_bottom(){
     let result_children_items = ''
     for(let i = 0; i < array_rnd_int.length; i++){ result_children_items += create_custom_child_item(array_rnd_int[i]) }
         custom_image_child_items.innerHTML = result_children_items
-    
-   
 }
 
 function create_custom_child_item(id){

@@ -15,21 +15,25 @@ const app = initializeApp(firebaseConfig)
 const firestore = getFirestore(app)
 const auth = getAuth(app) 
 
-document.getElementById('login_button').addEventListener('click', () =>{
-    let pageEmail    = document.getElementById('email').value
-    let pagePassword = document.getElementById('password').value
-    createUserWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
-        const user = userCredential.user
-        window.localStorage.setItem('email', pageEmail)
-        window.localStorage.setItem('password', pagePassword)
-        window.localStorage.setItem('uid', user.uid)
-        enter_with_email_and_password(pageEmail, pagePassword)
-      }).catch((error) => {
-        const errorCode = error.code
-        const errorMessage = error.message
-        enter_with_email_and_password(pageEmail, pagePassword)       
-      })
-})
+let login_button_click = document.getElementById('login_button')
+if(login_button_click){
+    document.getElementById('login_button').addEventListener('click', () =>{
+        let pageEmail    = document.getElementById('email').value
+        let pagePassword = document.getElementById('password').value
+        createUserWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {
+            const user = userCredential.user
+            window.localStorage.setItem('email', pageEmail)
+            window.localStorage.setItem('password', pagePassword)
+            window.localStorage.setItem('uid', user.uid)
+            enter_with_email_and_password(pageEmail, pagePassword)
+          }).catch((error) => {
+            const errorCode = error.code
+            const errorMessage = error.message
+            enter_with_email_and_password(pageEmail, pagePassword)       
+          })
+    })
+}
+
 
 function enter_with_email_and_password(pageEmail, pagePassword){
     signInWithEmailAndPassword(auth, pageEmail, pagePassword).then((userCredential) => {

@@ -23,7 +23,6 @@ function set_title_page(page_has){
         set_title_difinition( page_titles.index.title )
         
     } else if(page_has.includes('image')){
-        console.log('page_has', page_has)
         let image_id = page_has.replace('#', '').replace('image-', '')
         set_title_difinition( skrep_storage[image_id].title + '  Семен Скрепецкий - Скрепоносный Бузотер')
 
