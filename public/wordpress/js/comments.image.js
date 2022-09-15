@@ -40,14 +40,14 @@ function prepare_image_id_firebase(){
 }
 
 async function firebase_get_data_from_custom_image(){
-    console.log('url_image_firebase = ', url_image_firebase)
+  
     const q = query(collection(firestore, 'comments/' + url_image_firebase + '/' + url_image_firebase))
     const querySnapshot = await getDocs(q)
     let top_comment = `<div class="row mb-4"><h3 class="col-12 tm-text-primary">Комментарии</h3></div>
                             <div class="row tm-mb-50">`
     let content_comment = ''
     querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data())
+        
         content_comment += `<div class="col-md-6 col-12">                      
                                 <p class="comment">`+doc.data().comment+`</p>
                                 <p class="comment">`+doc.data().email+`</p>

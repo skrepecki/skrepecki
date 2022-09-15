@@ -27,7 +27,7 @@ const analytics = getAnalytics(app)
 const dbRef = ref(getDatabase());
 get(child(dbRef, 'visited')).then((snapshot) => {
   if (snapshot.exists()) {
-    console.log(snapshot.val().count);
+    
     span_visited.innerText = 'Поситителей: ' + snapshot.val().count
     visited_value = snapshot.val().count
     add_new_visit()
