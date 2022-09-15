@@ -1,7 +1,6 @@
 var tm_video = document.getElementById('video-kuprin')
 
-
-document.addEventListener('click', function(){
+function trate_video(){
     let current_played = window.localStorage.getItem('play') || 0
 
     if( current_played % 7 == 0 ){
@@ -16,6 +15,8 @@ document.addEventListener('click', function(){
 
     current_played++
     window.localStorage.setItem('play', current_played)
+}
 
-    console.log(current_played)
-})
+document.addEventListener('click', function(){ trate_video() })
+
+trate_video()
