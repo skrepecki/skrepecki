@@ -2,7 +2,7 @@
 
 function set_custom_image_top(image_id){
     let img_html = document.getElementById('img_html')
-        img_html.src = 'https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/' + skrep_storage[image_id].image
+        img_html.src = '/public/wordpress/skrep-img/' + skrep_storage[image_id].image
         img_html.alt = skrep_storage[image_id].title + ' - Семен Скрепецкий - Скрепоносный Бузотер'
     
     let title_custom_image = document.getElementById('title_custom_image')
@@ -11,7 +11,7 @@ function set_custom_image_top(image_id){
     let image_description = document.getElementById('image_description')
         image_description.innerText = skrep_storage[image_id].description
     let download_link = document.getElementById('download_link')
-        download_link.href = 'https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/'+skrep_storage[image_id].image  
+        download_link.href = '/public/wordpress/skrep-img/'+skrep_storage[image_id].image  
         download_link.download = ''+skrep_storage[image_id].image        
 }
 
@@ -29,7 +29,7 @@ function set_random_images_bottom(){
 function create_custom_child_item(id){
     return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <figure class="effect-ming tm-video-item">
-                <img src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/`+skrep_storage[id].image+`" alt="`+skrep_storage[id].title+`" class="img-fluid index_page_list_image">
+                <img src="/public/wordpress/skrep-img/`+skrep_storage[id].image+`" alt="`+skrep_storage[id].title+` семен скрепецкий" class="img-fluid index_page_list_image">
                 <figcaption class="d-flex align-items-center justify-content-center">
                     <h2>`+skrep_storage[id].title+`</h2>
                     <a href="#image-`+id+`">`+skrep_storage[id].title+`</a>
