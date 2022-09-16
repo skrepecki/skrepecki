@@ -17,5 +17,4 @@ function trate_video(){
 }
 
 document.addEventListener('click', function(){ trate_video() })
-
 trate_video()
