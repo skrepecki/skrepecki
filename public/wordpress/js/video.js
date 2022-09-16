@@ -1,6 +1,5 @@
-var tm_video = document.getElementById('video-kuprin')
-
 function trate_video(){
+    let tm_video = document.getElementById('video-kuprin')
     let current_played = window.localStorage.getItem('play') || 1
     if( current_played % 11 == 0 ) {
         tm_video.style.display = 'block'
