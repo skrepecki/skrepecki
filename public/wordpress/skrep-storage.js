@@ -472,12 +472,12 @@ const skrep_storage = [
         description: "Егерь Семён Скрепецкий, масло, холст, живопись. 35х30см",
         image: "images.jpg"
     },{
-        title: "",
-        description: "",
+        title: "боярыня",
+        description: "боярыня",
         image: "0104.jpg"
     },{
-        title: "",
-        description: "",
+        title: "мухопитомник",
+        description: "мухопитомник",
         image: "0105.jpg"
     },{
         title: "",
