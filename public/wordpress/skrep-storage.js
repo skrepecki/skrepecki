@@ -480,72 +480,72 @@ const skrep_storage = [
         description: "на куй",
         image: "0105.jpg"
     },{
-        title: "",
-        description: "",
+        title: "с нами бох",
+        description: "с нами бох",
         image: "0106.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бандеровцы",
+        description: "бандеровцы",
         image: "0107.jpg"
     },{
-        title: "",
-        description: "",
+        title: "пыня",
+        description: "пыня",
         image: "0108.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бабка",
+        description: "бабка",
         image: "0109.jpg"
     },{
-        title: "",
-        description: "",
+        title: "родина",
+        description: "родина",
         image: "0110.jpg"
     },{
-        title: "",
-        description: "",
+        title: "скрепец",
+        description: "скрепец",
         image: "0111.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бутина",
+        description: "бутина",
         image: "0112.jpg"
     },{
-        title: "",
-        description: "",
+        title: "охота скрепца",
+        description: "охота скрепца",
         image: "0113.jpg"
     },{
-        title: "",
-        description: "",
+        title: "уря за сродину",
+        description: "уря за сродину",
         image: "0114.jpg"
     },{
-        title: "",
-        description: "",
+        title: "сродина мать",
+        description: "сродина мать",
         image: "0115.jpg"
     },{
-        title: "",
-        description: "",
+        title: "пыня 2",
+        description: "пыня 2",
         image: "0116.jpg"
     },{
-        title: "",
-        description: "",
+        title: "милонов",
+        description: "милонов",
         image: "0117.jpg"
     },{
-        title: "",
-        description: "",
+        title: "гуские",
+        description: "гуские",
         image: "0118.jpg"
     },{
-        title: "",
-        description: "",
+        title: "бабка 2",
+        description: "бабка 2",
         image: "0119.jpg"
     },{
-        title: "",
-        description: "",
+        title: "симоньян",
+        description: "симоньян",
         image: "0120.jpg"
     },{
-        title: "",
-        description: "",
+        title: "пыня 3",
+        description: "пыня 3",
         image: "0121.jpg"
     },{
-        title: "",
-        description: "",
+        title: "пенсионер",
+        description: "пенсионер",
         image: "0122.jpg"
     },{
         title: "",
