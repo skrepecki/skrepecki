@@ -476,8 +476,8 @@ const skrep_storage = [
         description: "боярыня",
         image: "0104.jpg"
     },{
-        title: "мухопитомник",
-        description: "мухопитомник",
+        title: "на куй",
+        description: "на куй",
         image: "0105.jpg"
     },{
         title: "",
