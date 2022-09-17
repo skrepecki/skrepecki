@@ -1,6 +1,6 @@
 // listado de imagenes en la pagina principal
 var current_page = 0
-var count_pages  = parseInt(skrep_storage.length / 11)
+var count_pages  = parseInt(skrep_storage.length / 7)
 let current_page_hash_w = window.location.hash
 if(window.location.hash.includes('#page=')){
     let hash_page = window.location.hash.replace('#page=', '')
@@ -10,9 +10,9 @@ if(window.location.hash.includes('#page=')){
 function prepare_list_indices(page){    console.log('page = ' + page)
     if(page > count_pages) page = 0;               current_page = page 
     if(page < 0)           page = count_pages - 1; current_page = page
-    let desde = 11 * page
+    let desde = 7 * page
     let array_page_indices = []
-    for(let i = 0; i < 11; i++) array_page_indices.push(desde++)
+    for(let i = 0; i < 7; i++) array_page_indices.push(desde++)
 
     let content_page = ''
     try{
