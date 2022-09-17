@@ -17,8 +17,8 @@ let page_titles = {
 
 
 function set_title_page(page_has){
-    $("html, body").animate({scrollTop: $("#custom_item_image").offset().top }, "slow")
-
+    if(!window.location.hash.includes('#page=')) $("html, body").animate({scrollTop: $("#custom_item_image").offset().top }, "slow")
+    
     if(!page_has || page_has < 3){
         set_title_difinition( page_titles.index.title )
         
