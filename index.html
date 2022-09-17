@@ -103,21 +103,21 @@
            <h2 class="col-6 tm-text-primary"><a class="navbar-brand" href="/"><small>Скрепецкий Картины</small></a></h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
-                    Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of 200
+                    Page <input type="text" value="0" size="0" class="tm-input-paging tm-text-primary" id="current_page_value" disabled> of <span id="pages_span">pages</span>
                 </form>
             </div>
         </div>
         <div class="row tm-mb-90 tm-gallery" id="div_images_gallery"></div>
         <div class="row tm-mb-90">
             <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Previous</a>
-                <div class="tm-paging d-flex">
+                <a class="btn btn-primary tm-btn-prev mb-2" id="previos_button">Предыдущая</a>
+                <!-- <div class="tm-paging d-flex">
                     <a href="javascript:void(0);" class="active tm-paging-link">1</a>
                     <a href="javascript:void(0);" class="tm-paging-link">2</a>
                     <a href="javascript:void(0);" class="tm-paging-link">3</a>
                     <a href="javascript:void(0);" class="tm-paging-link">4</a>
-                </div>
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Next Page</a>
+                </div> -->
+                <a class="btn btn-primary tm-btn-next" id="next_button">Следущая</a>
             </div>            
         </div>
     </main> 

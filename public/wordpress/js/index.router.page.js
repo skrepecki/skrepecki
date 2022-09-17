@@ -22,7 +22,7 @@ function show_current_page_data(){
      inframe_video_section.style.display   = 'none'
      section_login.style.display           = 'none'
 
-     if(!current_page || current_page.length < 3){                                  // index page
+     if(!current_page || current_page.length < 3 || current_page.includes('page=')){                                  // index page
         index_page_main_content.style.display = 'block'
         div_banner_top.style.backgroundImage = "url('/public/wordpress/img/top_banner.jpg')"
         ul_list_links[0].classList.add('active')  
