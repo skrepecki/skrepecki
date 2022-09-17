@@ -1,14 +1,14 @@
 // listado de imagenes en la pagina principal
 
+var images_indices = 1
+var count_pages    = skrep_storage.length / 9; console.log('count_pages', count_pages)
+
+
 let div_images_gallery = document.getElementById('div_images_gallery')
 let content_page = ''
-
-
-for (let i = 0; i < skrep_storage.length; i++) {
-    content_page += put_images_in_page(i, skrep_storage[i])
-}
-
+for (let i = 0; i < skrep_storage.length; i++) content_page += put_images_in_page(i, skrep_storage[i])
 div_images_gallery.innerHTML = content_page
+
 
 function put_images_in_page(i,item){
     return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
