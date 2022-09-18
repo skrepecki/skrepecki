@@ -16,7 +16,7 @@ function prepare_list_indices(page){
 
     let content_page = ''
     try{
-        for (let i = 0; i < array_page_indices.length; i++) content_page += put_images_in_page(i, skrep_storage[array_page_indices[i]])
+        for (let i = 0; i < array_page_indices.length; i++) content_page += put_images_in_page(array_page_indices[i], skrep_storage[array_page_indices[i]])
     } catch(e){}    
     document.getElementById('div_images_gallery').innerHTML    = content_page
     document.getElementById('current_page_value').value        = page
