@@ -44,7 +44,6 @@ document.getElementById('previos_button').addEventListener('click', function(){
     current_page--; prepare_list_indices(current_page)
     document.getElementById('previos_button').href = '/#page='+current_page
 })
-
 document.getElementById('next_button').addEventListener('click', function(){
     current_page++; prepare_list_indices(current_page)
     document.getElementById('next_button').href = '/#page='+current_page
