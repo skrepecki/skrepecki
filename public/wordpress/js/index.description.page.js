@@ -29,21 +29,17 @@ function set_title_page(page_has){
         } else {
             set_title_difinition( skrep_storage[image_id].title)
         }
-        
 
     } else {
         switch(page_has){
             case '#video':
                 set_title_difinition( page_titles.video.title )
-
                 break
             case '#registration-login': 
                 set_title_difinition( page_titles["registration-login"].title ) 
-
                 break
             case '#robert-burdai': 
                 set_title_difinition( page_titles["robert"].title ) 
-
                 break    
         } 
     }
@@ -51,7 +47,7 @@ function set_title_page(page_has){
 
 
 function set_title_difinition(title){
-    document.title = title
+    document.title                                               = title
     document.getElementsByTagName('meta')["keywords"].content    = title
     document.getElementsByTagName('meta')["description"].content = title
 }
