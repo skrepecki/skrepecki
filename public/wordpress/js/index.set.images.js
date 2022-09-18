@@ -15,7 +15,7 @@ function prepare_list_indices(page){
     for(let i = 0; i < 7; i++) array_page_indices.push(desde++)
 
     let content_page = ''
-    try{
+    try{ 
         for (let i = 0; i < array_page_indices.length; i++) content_page += put_images_in_page(array_page_indices[i], skrep_storage[array_page_indices[i]])
     } catch(e){}    
     document.getElementById('div_images_gallery').innerHTML    = content_page
@@ -26,17 +26,17 @@ function prepare_list_indices(page){
 
 function put_images_in_page(i,item){
     return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-            <img src="/public/wordpress/skrep-img/`+item.image+`" alt="`+item.title+` семен скрепецкий" class="img-fluid index_page_list_image">
-            <figcaption class="d-flex align-items-center justify-content-center">
-            <h2>`+item.title+`</h2>
-            <a href="#image-`+i+`">`+item.title+`</a>
-            </figcaption>                    
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-            <span class="tm-text-gray-light"></span>
-            <span></span>
-            </div>
+                <figure class="effect-ming tm-video-item">
+                    <img src="/public/wordpress/skrep-img/`+item.image+`" alt="`+item.title+` семен скрепецкий" class="img-fluid index_page_list_image">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>`+item.title+`</h2>
+                        <a href="#image-`+i+`">`+item.title+`</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light"></span>
+                    <span></span>
+                </div>
             </div>`
 }
 
