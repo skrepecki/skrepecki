@@ -52,5 +52,7 @@ function show_current_page_data(){
      }
     
      set_title_page(current_page)
+     document.querySelector('link[rel="canonical"]').href = window.location.href
+    
 }
 

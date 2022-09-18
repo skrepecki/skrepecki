@@ -7,7 +7,7 @@ if(window.location.hash.includes('#page=')){
     current_page  = hash_page
 }
 
-function prepare_list_indices(page){    console.log('page = ' + page)
+function prepare_list_indices(page){   
     if(page > count_pages) page = 0;               current_page = page 
     if(page < 0)           page = count_pages - 1; current_page = page
     let desde = 7 * page
