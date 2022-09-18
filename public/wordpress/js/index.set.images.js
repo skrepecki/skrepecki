@@ -2,9 +2,9 @@
 var current_page = 0
 var count_pages  = parseInt(skrep_storage.length / 7)
 let current_page_hash_w = window.location.hash
-if(window.location.hash.includes('#page=')){
+if(window.location.hash.includes('#page=')){ 
     let hash_page = window.location.hash.replace('#page=', '')
-    current_page  = hash_page
+    current_page  = hash_page 
 }
 
 function prepare_list_indices(page){   
