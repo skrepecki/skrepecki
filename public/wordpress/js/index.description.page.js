@@ -24,7 +24,12 @@ function set_title_page(page_has){
         
     } else if(page_has.includes('image')){
         let image_id = page_has.replace('#', '').replace('image-', '')
-        set_title_difinition( skrep_storage[image_id].title + '  Семен Скрепецкий - Скрепоносный Бузотер')
+        if(skrep_storage[image_id].title == ''){
+            set_title_difinition('Семен Скрепецкий - Скрепоносный Бузотер')
+        } else {
+            set_title_difinition( skrep_storage[image_id].title)
+        }
+        
 
     } else {
         switch(page_has){
