@@ -717,7 +717,7 @@ const skrep_storage = [
         image: "0164.jpg"
     },{
         title: "родная говень",
-        description: "кого там в родную говень вернуть",
+        description: "кого там в родную говень вернуть ?",
         image: "0165.jpg"
     },{
         title: "",
