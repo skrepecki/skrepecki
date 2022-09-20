@@ -10,7 +10,7 @@
     <meta name="keywords" content="Картины Семен Скрепецкий, Скрепоносный Бузотер">
     <meta name="author" content="Семен Скрепецкий">
     <meta name="generator" content="Скрепецкий">
-    <link rel="manifest" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/manifest.json">    
+    <link rel="manifest" href="/manifest.json">    
     <meta name="msapplication-TileImage" content="/public/wordpress/img/i.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="theme-color" content="#FFFFFF">
@@ -57,14 +57,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 1000;">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="list_a_links">
-                <li class="nav-item"><a class="nav-link nav-link-1" aria-current="page" href="#">Картины</a></li>
-                <li class="nav-item"><a class="nav-link nav-link-2" href="#video">Видео</a></li>
-                <li class="nav-item"><a class="nav-link nav-link-3" href="#registration-login">Логин</a></li> 
-                <li class="nav-item"><a class="nav-link nav-link-4" href="#robert-burdai">Роберт</a></li>
+                <li id="index-page" class="nav-item"> <a onclick="myFunction(this)" class="nav-link nav-link-1" aria-current="page" href="#">Картины</a></li>
+                <li id="video-page" class="nav-item"> <a onclick="myFunction(this)" class="nav-link nav-link-2" href="/video">Видео</a></li>
+                <li id="login-page" class="nav-item"> <a onclick="myFunction(this)" class="nav-link nav-link-3" href="/registration-login">Логин</a></li> 
+                <li id="robert-page" class="nav-item"><a onclick="myFunction(this)" class="nav-link nav-link-4" href="/robert-burdai">Роберт</a></li>
             </ul>
             </div>
         </div>
     </nav>
+
+    <script>
+        function myFunction(event) {
+            event.preventDefault()
+                console.log('event id =', event.target.id)
+        }
+
+        let pages_nav = ['index-page', 'video-page', 'login-page', 'robert-page']
+        for(let i = 0; i < pages_nav.length; i++){
+            let nav_link = document.getElementById(pages_nav[i])
+            
+            nav_link.addEventListener('click', function(event){
+                event.preventDefault()
+                console.log('event id =', event.target.id)
+            })
+        }
+    </script>
 
     <section class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" style="background-image: url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg'); background-size:cover; background-repeat: no-repeat;" id="div_banner_top">
         <video controls id="video-kuprin" width="40%" height="77px" controls style="display:none;" ><source src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/dmitrii-kuprin.mp4" type="video/mp4"></video>  
