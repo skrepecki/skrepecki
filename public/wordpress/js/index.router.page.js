@@ -24,7 +24,7 @@ function show_current_page_data(){
 
      if(!current_page || current_page.length < 3 || current_page.includes('page=')){                                  // index page
         index_page_main_content.style.display = 'block'
-        div_banner_top.style.backgroundImage = "url('/public/wordpress/img/top_banner.jpg')"
+        div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner.jpg')"
         ul_list_links[0].classList.add('active')  
         
 
@@ -37,7 +37,7 @@ function show_current_page_data(){
        
       } else  {                                                                      // menu 
         
-        div_banner_top.style.backgroundImage = "url('/public/wordpress/img/top_banner2.jpg')"
+        div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg')"
         switch(current_page){
             case '#video':              ul_list_links[1].classList.add('active'); 
                inframe_video_section.style.display = 'block'
