@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>var google = 'google' || true; var googleBot = 'google bot'; var userIsLogged = false;</script>
-    <script>if (location.protocol != 'https:' && !window.location.href.includes('127.0.0.1')) location.href = 'https://skrepeckiy.eu';</script>
+    <script>if (location.protocol != 'https:' && !window.location.href.includes('127.0.0.1')) location.href = 'https://skrepecki.web.app';</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семен Скрепецкий Картины</title>
     <meta name="description" content="Скрепоносный Бузотер, Картины Семен Скрепецкий">
@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/i.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/i2.png">
 
-    <link rel="canonical" href="https://skrepeckiy.eu"> 
+    <link rel="canonical" href="https://skrepecki.web.app"> 
     <meta name="robots" content="index,follow,all">
     <link rel="apple-touch-icon" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/i.png" sizes="180x180">
     <link rel="icon" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/i1.png" sizes="32x32" type="image/png">
@@ -28,15 +28,15 @@
     <link rel="stylesheet" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/css/templatemo-style.css">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://skrepeckiy.eu","name":"Семен Скрепецкий Картины","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://skrepeckiy.eu?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://skrepeckiy.eu","name":"Семен Скрепецкий Картины","logo":"/public/wordpress/skrep-img/real.webp"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://skrepecki.web.app","name":"Семен Скрепецкий Картины","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://skrepecki.web.app?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://skrepecki.web.app","name":"Семен Скрепецкий Картины","logo":"/public/wordpress/skrep-img/real.webp"}</script>
 
     <meta property="og:image" content="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Скрепоносный бузотёр " />
     <meta property="og:description" content="Картины Семен Скрепецкий" />
-    <meta property="og:url" content="https://skrepeckiy.eu/" />
+    <meta property="og:url" content="https://skrepecki.web.app/" />
     <meta property="og:site_name" content="Скрепоносный бузотёр" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Скрепоносный бузотёр" />
@@ -57,31 +57,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 1000;">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="list_a_links">
-                <li id="index-page" class="nav-item"> <a onclick="myFunction(this)" class="nav-link nav-link-1" aria-current="page" href="#">Картины</a></li>
-                <li id="video-page" class="nav-item"> <a onclick="myFunction(this)" class="nav-link nav-link-2" href="/video">Видео</a></li>
-                <li id="login-page" class="nav-item"> <a onclick="myFunction(this)" class="nav-link nav-link-3" href="/registration-login">Логин</a></li> 
-                <li id="robert-page" class="nav-item"><a onclick="myFunction(this)" class="nav-link nav-link-4" href="/robert-burdai">Роберт</a></li>
+                <li id="index-page" class="nav-item"> <a onclick="show_current_page_data(event)" class="nav-link nav-link-1" aria-current="page" href="/">Картины</a></li>
+                <li id="video-page" class="nav-item"> <a onclick="show_current_page_data(event)" class="nav-link nav-link-2" href="😝😝video😉😉😉">Видео</a></li>
+                <li id="login-page" class="nav-item"> <a onclick="show_current_page_data(event)" class="nav-link nav-link-3" href="😊😊😊registration-login😊😊😊">Логин</a></li> 
+                <li id="robert-page" class="nav-item"><a onclick="show_current_page_data(event)" class="nav-link nav-link-4" href="😘😘robert-burdai😜😜">Роберт</a></li>
             </ul>
             </div>
         </div>
     </nav>
 
-    <script>
-        function myFunction(event) {
-            event.preventDefault()
-                console.log('event id =', event.target.id)
-        }
-
-        let pages_nav = ['index-page', 'video-page', 'login-page', 'robert-page']
-        for(let i = 0; i < pages_nav.length; i++){
-            let nav_link = document.getElementById(pages_nav[i])
-            
-            nav_link.addEventListener('click', function(event){
-                event.preventDefault()
-                console.log('event id =', event.target.id)
-            })
-        }
-    </script>
 
     <section class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" style="background-image: url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg'); background-size:cover; background-repeat: no-repeat;" id="div_banner_top">
         <video controls id="video-kuprin" width="40%" height="77px" controls style="display:none;" ><source src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/dmitrii-kuprin.mp4" type="video/mp4"></video>  
@@ -189,7 +173,9 @@
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-storage.js"></script>
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.description.page.js"></script>
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/image.jcustom.js"></script>
-    <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.router.page.js"></script>
+
+    <script src="/index.router.page.js"></script>
+    
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.set.images.js"></script>
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.footer.links.js"></script>
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.personal.galery.js"></script>
@@ -215,7 +201,7 @@
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym")
         ym(90314468, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true })
     </script>
-    <script src="/sw.js"></script>
+    <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/sw.js"></script>
     <script>$('body').addClass('loaded');</script>
 </body>
 </html>
