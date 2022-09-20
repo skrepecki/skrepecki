@@ -1,13 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBoC2t2yfoMY6dAU67HuQerDeygvgK7uIo",
-    authDomain: "skrepeckiy.firebaseapp.com",
-    databaseURL: "https://skrepeckiy-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "skrepeckiy",
-    storageBucket: "skrepeckiy.appspot.com",
-    messagingSenderId: "84562251992",
-    appId: "1:84562251992:web:e820e3303f1221f2ee87ad",
-    measurementId: "G-VZHLXLSYRX"
-}
+    apiKey: "AIzaSyAYRnKPHSEehgXJmXLozm6ygxvkYlKfIJk",
+    authDomain: "skrepecki.firebaseapp.com",
+    databaseURL: "https://skrepecki-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "skrepecki",
+    storageBucket: "skrepecki.appspot.com",
+    messagingSenderId: "602034679120",
+    appId: "1:602034679120:web:e799553343c8d256a75055",
+    measurementId: "G-RRBC0XQCE7"
+  }
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
 import { getFirestore, doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"
