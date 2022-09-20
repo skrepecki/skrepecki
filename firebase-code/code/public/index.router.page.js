@@ -4,13 +4,11 @@ show_current_page_data(null)
 
 
 function show_current_page_data(object){  
-   console.log(location.pathname   )
-
    let current_page = null 
    if(object){
       object.preventDefault()
       current_page = object.target.href
-      window.history.pushState(null, null, current_page)
+      window.history.pushState(new Date().getUTCMilliseconds(), new Date().getUTCMilliseconds(), current_page)
    } else{
       current_page = window.location.pathname
    }
@@ -32,7 +30,7 @@ function show_current_page_data(object){
      inframe_video_section.style.display   = 'none'
      section_login.style.display           = 'none'
 
-     console.log('current_page', current_page.length)
+     console.log('current_page', current_page)
 
      if(current_page.length < 3 || current_page.includes('page=')){                                  // index page
         index_page_main_content.style.display = 'block'
@@ -41,12 +39,15 @@ function show_current_page_data(object){
         set_title_difinition( page_titles.index.title )
 
      } else if(current_page.includes('image')){                                     // custom image page 
-       let image_id = current_page.replace('#', '').replace('image-', '')
-       
+       let image_id = current_page.split('image-')[1]
        custom_item_image.style.display = 'block'
        set_custom_image_top(image_id)
        set_random_images_bottom()
-       
+       if(skrep_storage[image_id].title == '') {
+            set_title_difinition('Семен Скрепецкий - Скрепоносный Бузотер')
+       } else { 
+            set_title_difinition( skrep_storage[image_id].title) 
+       }
       } else  {                                                                      // menu 
         
         div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg')"
@@ -68,8 +69,8 @@ function show_current_page_data(object){
         } 
      }
     
-     set_title_page(current_page)
-     document.querySelector('link[rel="canonical"]').href = window.location.href
     
+     document.querySelector('link[rel="canonical"]').href = window.location.href
+     if(!window.location.hash.includes('#page=')) $("html, body").animate({scrollTop: $("#custom_item_image").offset().top }, "slow")
 }
 

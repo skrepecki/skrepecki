@@ -6,6 +6,6 @@ for(let i = 0; i < skrep_storage.length; i++) html_links_result += return_one_li
 footer_list_links.innerHTML = html_links_result
 
 function return_one_link(i, title){
-    if(title == '') return `<div class="col-lg-3 col-md-3 col-sm-6 col-6"><a href="/#image-`+i+`" class="tm-text-gray d-block mb-2" target="_blank">`+i+`</a></div>`
-    return `<div class="col-lg-3 col-md-3 col-sm-6 col-6"><a href="/#image-`+i+`" class="tm-text-gray d-block mb-2" target="_blank">`+title+`</a></div>`
+    if(title == '') return `<div class="col-lg-3 col-md-3 col-sm-6 col-6"><a href="/image-`+i+`" class="tm-text-gray d-block mb-2" target="_blank">`+i+`</a></div>`
+    return `<div class="col-lg-3 col-md-3 col-sm-6 col-6"><a href="/image-`+i+`" class="tm-text-gray d-block mb-2" target="_blank">`+title+`</a></div>`
 }
