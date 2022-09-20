@@ -30,7 +30,7 @@ function put_images_in_page(i,item){
                     <img src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/`+item.image+`" alt="`+item.title+` семен скрепецкий" class="img-fluid index_page_list_image">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>`+item.title+`</h2>
-                        <a href="#image-`+i+`">`+item.title+`</a>
+                        <a onclick="show_current_page_data(event)" href="image-`+i+`">`+item.title+`</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">

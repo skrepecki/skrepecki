@@ -1,10 +1,18 @@
 // principal router
-show_current_page_data()
-window.addEventListener('hashchange', function () { show_current_page_data() })
-    
+show_current_page_data(null)
+// window.addEventListener('hashchange', function () { show_current_page_data() })
 
-function show_current_page_data(){ 
-     let current_page = window.location.hash || ''; 
+
+function show_current_page_data(object){  
+   let current_page = null 
+   if(object){
+      object.preventDefault()
+      current_page = object.target.href
+      window.history.pushState(new Date().getUTCMilliseconds(), new Date().getUTCMilliseconds(), current_page)
+   } else{
+      current_page = window.location.pathname
+   }
+
      let ul_list_links = document.getElementById('list_a_links').getElementsByTagName('a')
      let inframe_video_section = document.getElementById('inframe_video_section')
      for (let item of ul_list_links) item.classList.remove("active")
@@ -22,37 +30,46 @@ function show_current_page_data(){
      inframe_video_section.style.display   = 'none'
      section_login.style.display           = 'none'
 
-     if(!current_page || current_page.length < 3 || current_page.includes('page=')){                                  // index page
+
+     if(current_page.length < 3 || current_page.includes('page=')){                                  // index page
         index_page_main_content.style.display = 'block'
         div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner.jpg')"
         ul_list_links[0].classList.add('active')  
-        
+        set_title_difinition( page_titles.index.title )
 
      } else if(current_page.includes('image')){                                     // custom image page 
-       let image_id = current_page.replace('#', '').replace('image-', '')
-       
+       let image_id = current_page.split('image-')[1]
        custom_item_image.style.display = 'block'
        set_custom_image_top(image_id)
        set_random_images_bottom()
-       
+       if(skrep_storage[image_id].title == '') {
+            set_title_difinition('Семен Скрепецкий - Скрепоносный Бузотер')
+       } else { 
+            set_title_difinition( skrep_storage[image_id].title) 
+       }
       } else  {                                                                      // menu 
         
         div_banner_top.style.backgroundImage = "url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg')"
-        switch(current_page){
-            case '#video':              ul_list_links[1].classList.add('active'); 
-               inframe_video_section.style.display = 'block'
-               break
-            case '#registration-login': ul_list_links[2].classList.add('active'); 
-               section_login.style.display         = 'block'
-               break
-            case '#robert-burdai':      ul_list_links[3].classList.add('active') 
-               section_rober_burdai.style.display  = 'block'
-               break
+
+        if(current_page.includes('video')){
+            ul_list_links[1].classList.add('active')
+            inframe_video_section.style.display = 'block'
+            set_title_difinition( page_titles.video.title )
+
+        } else if(current_page.includes('registration-login')){
+            ul_list_links[2].classList.add('active')
+            section_login.style.display         = 'block'
+            set_title_difinition( page_titles["registration-login"].title ) 
+
+        } else if(current_page.includes('robert-burdai')){ 
+            ul_list_links[3].classList.add('active') 
+            section_rober_burdai.style.display  = 'block'
+            set_title_difinition( page_titles["robert"].title ) 
         } 
      }
     
-     set_title_page(current_page)
-     document.querySelector('link[rel="canonical"]').href = window.location.href
     
+     document.querySelector('link[rel="canonical"]').href = window.location.href
+     if(!window.location.hash.includes('#page=')) $("html, body").animate({scrollTop: $("#custom_item_image").offset().top }, "slow")
 }
 

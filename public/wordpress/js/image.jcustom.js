@@ -6,7 +6,7 @@ function set_custom_image_top(image_id){
         img_html.alt = skrep_storage[image_id].title + ' - Семен Скрепецкий - Скрепоносный Бузотер'
     
     let title_custom_image = document.getElementById('title_custom_image')
-        title_custom_image.innerHTML = '<a class="navbar-brand" href="#image-'+image_id+'" target="_blank">'+skrep_storage[image_id].title+'</a>'
+        title_custom_image.innerHTML = '<a class="navbar-brand" href="image-'+image_id+'">'+skrep_storage[image_id].title+'</a>'
 
     let image_description = document.getElementById('image_description')
         image_description.innerText = skrep_storage[image_id].description
@@ -30,7 +30,7 @@ function create_custom_child_item(id){
                 <img src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/`+skrep_storage[id].image+`" alt="`+skrep_storage[id].title+` семен скрепецкий" class="img-fluid index_page_list_image">
                 <figcaption class="d-flex align-items-center justify-content-center">
                     <h2>`+skrep_storage[id].title+`</h2>
-                    <a href="#image-`+id+`">`+skrep_storage[id].title+`</a>
+                    <a onclick="show_current_page_data(event)" href="image-`+id+`">`+skrep_storage[id].title+`</a>
                 </figcaption>                    
             </figure>
             <div class="d-flex justify-content-between tm-text-gray">
@@ -39,5 +39,4 @@ function create_custom_child_item(id){
             </div>
             </div>`
 }
-
 

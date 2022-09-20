@@ -30,7 +30,6 @@ function show_current_page_data(object){
      inframe_video_section.style.display   = 'none'
      section_login.style.display           = 'none'
 
-     console.log('current_page', current_page)
 
      if(current_page.length < 3 || current_page.includes('page=')){                                  // index page
         index_page_main_content.style.display = 'block'

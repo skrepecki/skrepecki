@@ -9,7 +9,7 @@ function trate_video(){
         tm_video.style.display = 'none'
         tm_video.pause()
     }
-    // current_played++
+    current_played++
     window.localStorage.setItem('play', current_played)
 }
 
