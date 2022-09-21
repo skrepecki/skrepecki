@@ -47,13 +47,15 @@ function prepare_image_id_firebase(){
 }
 
 async function firebase_get_data_from_custom_image(){          
-  
+    let info_comment = ''
+
     const q = query(collection(firestore, 'comments/' + url_image_firebase + '/' + url_image_firebase))
     const querySnapshot = await getDocs(q)
     let top_comment = `<div class="row mb-4"><h3 class="col-12 tm-text-primary">Комментарии</h3></div>
                             <div class="row tm-mb-50">`
     let content_comment = ''
     querySnapshot.forEach((doc) => {
+        info_comment += doc.data().comment  + ' ' + doc.data().email
         content_comment += `<div class="col-md-6 col-12">                      
                                 <p class="comment">`+doc.data().comment+`</p>
                                 <p class="comment">`+doc.data().email+`</p>
@@ -65,6 +67,7 @@ async function firebase_get_data_from_custom_image(){
                         </div></div>`
     images_comments_div.innerHTML = top_comment + content_comment + form_comment
     set_click_save_button()
+    if(info_comment != '') document.getElementsByTagName('meta')["description"].content = info_comment
 }
 
 function set_click_save_button(){
