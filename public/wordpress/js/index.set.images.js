@@ -7,6 +7,7 @@ if(window.location.hash.includes('#page=')){
     current_page  = hash_page 
 }
 
+
 function prepare_list_indices(page){   
     if(page > count_pages) page = 0;               current_page = page 
     if(page < 0)           page = count_pages - 1; current_page = page
@@ -43,9 +44,23 @@ function put_images_in_page(i,item){
 document.getElementById('previos_button').addEventListener('click', function(){
     current_page--; prepare_list_indices(current_page)
     document.getElementById('previos_button').href = '/#page='+current_page
+    push_random_link()
 })
 document.getElementById('next_button').addEventListener('click', function(){
     current_page++; prepare_list_indices(current_page)
     document.getElementById('next_button').href = '/#page='+current_page
+    push_random_link()
 })
 prepare_list_indices(current_page)
+
+push_random_link()
+
+function push_random_link(){
+    let rand_links_html     = ''
+    let randomSkrep = (min, max) => Math.floor(Math.random() * (max - min)) + min
+    for(let i = 0; i < 4; i++){
+        let mi_number = randomSkrep(0, skrep_storage.length)
+        rand_links_html += '<a href="/image-'+mi_number+'" class="active tm-paging-link">'+mi_number+'</a>'
+    }
+    document.getElementById('random_links').innerHTML = rand_links_html
+}
