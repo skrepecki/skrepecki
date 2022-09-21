@@ -69,7 +69,7 @@ function show_current_page_data(object){
      }
     
     
-     document.querySelector('link[rel="canonical"]').href = window.location.href
+     // document.querySelector('link[rel="canonical"]').href = window.location.href
      if(!window.location.hash.includes('#page=')) $("html, body").animate({scrollTop: $("#custom_item_image").offset().top }, "slow")
 }
 
