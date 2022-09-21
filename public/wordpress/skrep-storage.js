@@ -688,31 +688,31 @@ const skrep_storage = [
         description: "",
         image: "0157.jpg"
     },{
-        title: "",
+        title: "на сракете",
         description: "",
         image: "0158.jpg"
     },{
-        title: "",
+        title: "присаживайтесь",
         description: "",
         image: "0159.jpg"
     },{
-        title: "",
+        title: "откинулся",
         description: "",
         image: "0160.jpg"
     },{
-        title: "",
+        title: "чай",
         description: "",
         image: "0161.jpg"
     },{
-        title: "",
+        title: "кого вернуть",
         description: "",
         image: "0162.jpg"
     },{
-        title: "",
+        title: "вирусолог",
         description: "",
         image: "0163.jpg"
     },{
-        title: "",
+        title: "памаги",
         description: "",
         image: "0164.jpg"
     },{
@@ -720,39 +720,39 @@ const skrep_storage = [
         description: "кого там в родную говень вернуть ?",
         image: "0165.jpg"
     },{
-        title: "",
+        title: "укол",
         description: "",
         image: "0166.jpg"
     },{
-        title: "",
+        title: "синипалый",
         description: "",
         image: "0167.jpg"
     },{
-        title: "",
+        title: "обнуленинград",
         description: "",
         image: "0168.jpg"
     },{
-        title: "",
+        title: "посвящение",
         description: "",
         image: "0169.jpg"
     },{
-        title: "",
+        title: "семиголовый",
         description: "",
         image: "0170.jpg"
     },{
-        title: "",
+        title: "гаси петушню",
         description: "",
         image: "0171.jpg"
     },{
-        title: "",
+        title: "деды воевали",
         description: "",
         image: "0172.jpg"
     },{
-        title: "",
+        title: "пирамидкакобзона",
         description: "",
         image: "0173.jpg"
     },{
-        title: "",
+        title: "обнуленыш",
         description: "",
         image: "0174.jpg"
     },{
