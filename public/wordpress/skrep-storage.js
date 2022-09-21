@@ -576,115 +576,115 @@ const skrep_storage = [
         description: "сцарь хутин",
         image: "0129.jpg"
     },{
-        title: "",
+        title: "великан",
         description: "",
         image: "0130.jpg"
     },{
-        title: "",
+        title: "навальный",
         description: "",
         image: "0131.jpg"
     },{
-        title: "",
+        title: "шаман габышев",
         description: "",
         image: "0132.jpg"
     },{
-        title: "",
+        title: "катриарх педрилл",
         description: "",
         image: "0133.jpg"
     },{
-        title: "",
+        title: "путька",
         description: "",
         image: "0134.jpg"
     },{
-        title: "",
+        title: "лукашенко",
         description: "",
         image: "0135.jpg"
     },{
-        title: "",
+        title: "я вернулся",
         description: "",
         image: "0136.jpg"
     },{
-        title: "",
+        title: "балалака",
         description: "",
         image: "0137.jpg"
     },{
-        title: "",
+        title: "лапша",
         description: "",
         image: "0138.jpg"
     },{
-        title: "",
+        title: "народ",
         description: "",
         image: "0139.jpg"
     },{
-        title: "",
+        title: "захарова маша",
         description: "",
         image: "0140.jpg"
     },{
-        title: "",
+        title: "кокс лаврова",
         description: "",
         image: "0141.jpg"
     },{
-        title: "",
+        title: "карабах",
         description: "",
         image: "0142.jpg"
     },{
-        title: "",
+        title: "шампанское",
         description: "",
         image: "0143.jpg"
     },{
-        title: "",
+        title: "милонов",
         description: "",
         image: "0144.jpg"
     },{
-        title: "",
+        title: "байден",
         description: "",
         image: "0145.jpg"
     },{
-        title: "",
+        title: "просрочка",
         description: "",
         image: "0146.jpg"
     },{
-        title: "",
+        title: "колбасизм",
         description: "",
         image: "0147.jpg"
     },{
-        title: "",
+        title: "расчленинград",
         description: "",
         image: "0148.jpg"
     },{
-        title: "",
+        title: "икона",
         description: "",
         image: "0149.jpg"
     },{
-        title: "",
+        title: "ихтамнет",
         description: "",
         image: "0150.jpg"
     },{
-        title: "",
+        title: "тихановская",
         description: "",
         image: "0151.jpg"
     },{
-        title: "",
+        title: "бесогон михалков",
         description: "",
         image: "0152.jpg"
     },{
-        title: "",
+        title: "итоги правления",
         description: "",
         image: "0153.jpg"
     },{
-        title: "",
-        description: "",
+        title: "соловьев",
+        description: "соловьиный помет",
         image: "0154.jpg"
     },{
-        title: "",
+        title: "снарод",
         description: "",
         image: "0155.jpg"
     },{
-        title: "",
+        title: "некрополит",
         description: "",
         image: "0156.jpg"
     },{
-        title: "",
+        title: "все в срай",
         description: "",
         image: "0157.jpg"
     },{
