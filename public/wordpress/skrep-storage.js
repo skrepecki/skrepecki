@@ -548,32 +548,32 @@ const skrep_storage = [
         description: "пенсионер",
         image: "0122.jpg"
     },{
-        title: "",
+        title: "скрепы",
         description: "",
         image: "0123.jpg"
     },{
-        title: "",
-        description: "",
+        title: "казаки",
+        description: "казаки на росии",
         image: "0124.jpg"
     },{
-        title: "",
-        description: "",
+        title: "итог",
+        description: "итог правления пу",
         image: "0125.jpg"
     },{
-        title: "",
-        description: "",
+        title: "фредиПутлер",
+        description: "фредиПутлер",
         image: "0126.jpg"
     },{
-        title: "",
-        description: "",
+        title: "семен слепаков",
+        description: "семен слепаков",
         image: "0127.jpg"
     },{
-        title: "",
-        description: "",
+        title: "гоблин пучков",
+        description: "гоблин пучков",
         image: "0128.jpg"
     },{
-        title: "",
-        description: "",
+        title: "сцарь хутин",
+        description: "сцарь хутин",
         image: "0129.jpg"
     },{
         title: "",
