@@ -704,32 +704,32 @@ const skrep_storage = [
         description: "",
         image: "0161.jpg"
     },{
-        title: "кого вернуть",
+        title: "",
         description: "",
         image: "0162.jpg"
     },{
-        title: "вирусолог",
+        title: "",
         description: "",
         image: "0163.jpg"
     },{
-        title: "памаги",
+        title: "",
         description: "",
         image: "0164.jpg"
     },{
-        title: "родная говень",
-        description: "кого там в родную говень вернуть ?",
+        title: "кого вернуть",
+        description: "",
         image: "0165.jpg"
     },{
-        title: "",
+        title: "вирусолог",
         description: "",
         image: "0166.jpg"
     },{
-        title: "",
+        title: "памаги",
         description: "",
         image: "0167.jpg"
     },{
-        title: "",
-        description: "",
+        title: "родная говень",
+        description: "кого там в родную говень вернуть ?",
         image: "0168.jpg"
     },{
         title: "синипалый",
