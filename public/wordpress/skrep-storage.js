@@ -720,47 +720,47 @@ const skrep_storage = [
         description: "кого там в родную говень вернуть ?",
         image: "0165.jpg"
     },{
-        title: "укол",
+        title: "",
         description: "",
         image: "0166.jpg"
     },{
-        title: "синипалый",
+        title: "",
         description: "",
         image: "0167.jpg"
     },{
-        title: "обнуленинград",
+        title: "",
         description: "",
         image: "0168.jpg"
     },{
-        title: "посвящение",
+        title: "синипалый",
         description: "",
         image: "0169.jpg"
     },{
-        title: "семиголовый",
+        title: "обнуленинград",
         description: "",
         image: "0170.jpg"
     },{
-        title: "гаси петушню",
+        title: "посвящение",
         description: "",
         image: "0171.jpg"
     },{
-        title: "деды воевали",
+        title: "семиголовый",
         description: "",
         image: "0172.jpg"
     },{
-        title: "пирамидкакобзона",
+        title: "гаси петушню",
         description: "",
         image: "0173.jpg"
     },{
-        title: "обнуленыш",
+        title: "деды воевали",
         description: "",
         image: "0174.jpg"
     },{
-        title: "",
+        title: "пирамидкакобзона",
         description: "",
         image: "0175.jpg"
     },{
-        title: "",
+        title: "обнуленыш",
         description: "",
         image: "0176.jpg"
     },{
