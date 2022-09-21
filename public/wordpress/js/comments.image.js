@@ -55,7 +55,7 @@ async function firebase_get_data_from_custom_image(){
                             <div class="row tm-mb-50">`
     let content_comment = ''
     querySnapshot.forEach((doc) => {
-        info_comment += doc.data().comment  + ' ' + doc.data().email
+        info_comment += doc.data().comment  + ' ' + doc.data().email + ' '
         content_comment += `<div class="col-md-6 col-12">                      
                                 <p class="comment">`+doc.data().comment+`</p>
                                 <p class="comment">`+doc.data().email+`</p>
