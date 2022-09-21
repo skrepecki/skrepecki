@@ -40,3 +40,21 @@ function create_custom_child_item(id){
             </div>`
 }
 
+document.getElementById('image_previos_button').addEventListener('click', function(){
+    let has_page_image = window.location.pathname
+    if(has_page_image.includes('image')){
+        has_page_image = has_page_image.split('image-')[1]
+        has_page_image--
+        if(has_page_image < 0) has_page_image = skrep_storage.length - 1
+        window.location.href = '/image-' + has_page_image
+    }
+})
+document.getElementById('image_next_button').addEventListener('click', function(){
+    let has_page_image = window.location.pathname
+    if(has_page_image.includes('image')){
+        has_page_image = has_page_image.split('image-')[1]
+        has_page_image++
+        if(skrep_storage.length <= has_page_image) has_page_image = 0
+        window.location.href = '/image-' + has_page_image
+    }
+})
