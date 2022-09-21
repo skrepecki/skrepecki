@@ -956,7 +956,7 @@ const skrep_storage = [
         description: "рогозин",
         image: "0224.jpg"
     },{
-        title: "дмитрий куприн куприяниха",
+        title: "дмитрий куприн",
         description: "дмитрий куприн куприяниха",
         image: "0225.jpg"
     },{
@@ -964,7 +964,7 @@ const skrep_storage = [
         description: "всрай",
         image: "0226.jpg"
     },{
-        title: "аналоновнетная сракетородица",
+        title: "сракетородица",
         description: "аналоновнетная сракетородица",
         image: "0227.jpg"
     },{
@@ -1016,39 +1016,39 @@ const skrep_storage = [
         description: "экскримиская книженка",
         image: "0239.jpg"
     },{
-        title: "экскримиская книженка",
+        title: "конституция рф",
         description: "экскримиская книженка",
         image: "0240.jpg"
     },{
-        title: "всрай",
+        title: "срай скрепца",
         description: "всрай",
         image: "0241.jpg"
     },{
-        title: "всрай",
+        title: "срай",
         description: "всрай",
         image: "0242.jpg"
     },{
-        title: "срамат хутина",
+        title: "срамат",
         description: "срамат хутина",
         image: "0243.jpg"
     },{
-        title: "бдят",
-        description: "бдят",
+        title: "бдит",
+        description: "бдит",
         image: "0244.jpg"
     },{
-        title: "бдят",
-        description: "бдят",
+        title: "интернет",
+        description: "интернет",
         image: "0245.jpg"
     },{
         title: "духовная скрепа",
         description: "духовная скрепа",
         image: "0246.jpg"
     },{
-        title: "духовная скрепа",
-        description: "духовная скрепа",
+        title: "скрепа духовная",
+        description: "скрепа духовная",
         image: "0247.jpg"
     },{
-        title: "добро пожаловать на сросию",
+        title: "сросия",
         description: "добро пожаловать на сросию",
         image: "0248.jpg"
     }
