@@ -2,7 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <script>var google = 'google' || true; var googleBot = 'google bot'; var userIsLogged = false; var URL_PAGE_GLOBAL = window.location.pathname; var badooEmail = 'saron.alexei@gmail.com';</script>
+    <script>var google = 'google' || true; var googleBot = 'google bot'; 
+            var userIsLogged = false; var URL_PAGE_GLOBAL = window.location.pathname; var badooEmail = 'sar@gmail.com';
+            var TITLE_PAGE = 'Семен Скрепецкий Картины'
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семен Скрепецкий Картины</title>
     <meta name="description" content="Скрепоносный Бузотер, Картины Семен Скрепецкий">
@@ -174,12 +177,10 @@
   
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/plugins.js"></script>
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-storage.js"></script>
-    
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.description.page.js"></script>
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/image.jcustom.js"></script>
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.router.page.js"></script>
     <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.set.images.js"></script>
-
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.footer.links.js"></script>
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/index.personal.galery.js"></script>
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/visited.site.js" type="module"></script>
@@ -187,10 +188,7 @@
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/register-form-js.js" type="module"></script> 
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/comments.image.js" type="module"></script>
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/js/video.js"></script>  
-
     <script async src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/youtube.js"></script>
-   
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXPH6W1TXB"></script>
     <script>
         window.dataLayer = window.dataLayer || []
@@ -206,7 +204,16 @@
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym")
         ym(90314468, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true })
     </script>
-    <script src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/sw.js"></script>
+   
     <script>$('body').addClass('loaded');</script>
+    <script>window.dataLayer = window.dataLayer || [];  
+        if ('serviceWorker' in navigator) {  
+              window.addEventListener('load', function() { 
+              //  navigator.serviceWorker.register('/pwa.js');
+          })
+        }
+    </script>
+    <div id="chemaData"></div>
+    <script src="/ld-json.js"></script>
 </body>
 </html>

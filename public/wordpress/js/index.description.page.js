@@ -22,6 +22,7 @@ function set_title_page(page_has){
 
 
 function set_title_difinition(title){
+    TITLE_PAGE                                                   = title
     document.title                                               = title
     document.getElementsByTagName('meta')["keywords"].content    = title
     document.getElementsByTagName('meta')["description"].content = title
