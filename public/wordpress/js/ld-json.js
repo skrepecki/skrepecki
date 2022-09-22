@@ -1,5 +1,5 @@
-let currentHref = window.location.pathname
-
+function set_ld_json(__title__page__){
+    
 let elHead = document.getElementsByTagName('head')[0]
 let scripts = elHead.getElementsByTagName( 'script' ); 
 for(let i = 0; i < scripts.length; i++) {
@@ -7,7 +7,7 @@ for(let i = 0; i < scripts.length; i++) {
   if(sc.type == 'application/ld+json') sc.remove();
 }
 let dataObj = { "@context": "http://schema.org", "@type": "WebSite"}
-dataObj['name'] = TITLE_PAGE;
+dataObj['name'] = __title__page__;
 dataObj['url'] = window.location.href
 let elScript = document.createElement('script')
 elScript.type = 'application/ld+json'
@@ -18,7 +18,7 @@ dataObj = {
     "@context": "http://schema.org",
     "@type": "Organization",
     "url": window.location.href,
-    "name": TITLE_PAGE,
+    "name": __title__page__,
     "logo": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp"
 }
 elScript = document.createElement('script');
@@ -65,7 +65,7 @@ let randomUsers = (min, max) => Math.floor(Math.random() * (max - min)) + min
                 "height": 63
             }
      ],
-        "name": TITLE_PAGE,
+        "name": __title__page__,
         "url": window.location.href,
         "sameAs": [],
         "aggregateRating": {
@@ -83,3 +83,5 @@ let randomUsers = (min, max) => Math.floor(Math.random() * (max - min)) + min
     elScript.type = 'application/ld+json';
     elScript.text = JSON.stringify(dataObj);
     document.querySelector('head').appendChild(elScript);
+    
+}
