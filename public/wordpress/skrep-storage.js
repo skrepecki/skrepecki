@@ -764,167 +764,167 @@ const skrep_storage = [
         description: "",
         image: "0176.jpg"
     },{
-        title: "",
+        title: "на америку",
         description: "",
         image: "0177.jpg"
     },{
-        title: "",
+        title: "эрдоган",
         description: "",
         image: "0178.jpg"
     },{
-        title: "",
+        title: "дедпобед",
         description: "",
         image: "0179.jpg"
     },{
-        title: "",
+        title: "боярский",
         description: "",
         image: "0180.jpg"
     },{
-        title: "",
-        description: "",
+        title: "шойга",
+        description: "шойга",
         image: "0181.jpg"
     },{
-        title: "",
-        description: "",
+        title: "сечин",
+        description: "сечин",
         image: "0182.jpg"
     },{
-        title: "",
-        description: "",
+        title: "малышева",
+        description: "малышева",
         image: "0183.jpg"
     },{
-        title: "",
-        description: "",
+        title: "илон маск",
+        description: "илон маск",
         image: "0184.jpg"
     },{
-        title: "",
-        description: "",
+        title: "снарод",
+        description: "снарод роиси",
         image: "0185.jpg"
     },{
-        title: "",
-        description: "",
+        title: "присяга",
+        description: "присяга",
         image: "0186.jpg"
     },{
-        title: "",
-        description: "",
+        title: "здохла",
+        description: "здохла",
         image: "0187.jpg"
     },{
-        title: "",
-        description: "",
+        title: "вакцинация",
+        description: "вакцинация",
         image: "0188.jpg"
     },{
-        title: "",
-        description: "",
+        title: "вирусолог",
+        description: "вирусолог всея роиси",
         image: "0189.jpg"
     },{
-        title: "",
-        description: "",
+        title: "уткин",
+        description: "уткин и соловьев",
         image: "0190.jpg"
     },{
-        title: "",
+        title: "на бутылку",
         description: "",
         image: "0191.jpg"
     },{
-        title: "",
+        title: "план",
         description: "",
         image: "0192.jpg"
     },{
-        title: "",
+        title: "ворон",
         description: "",
         image: "0193.jpg"
     },{
-        title: "",
-        description: "",
+        title: "терешкова",
+        description: "валюша терешкова",
         image: "0194.jpg"
     },{
-        title: "",
-        description: "",
+        title: "нефть",
+        description: "нефть матушка",
         image: "0195.jpg"
     },{
-        title: "",
-        description: "",
+        title: "конституция",
+        description: "проституция",
         image: "0196.jpg"
     },{
-        title: "",
-        description: "",
+        title: "водка",
+        description: "водка",
         image: "0197.jpg"
     },{
-        title: "",
-        description: "",
+        title: "пафтарить",
+        description: "деды ваевале можым пафтарить",
         image: "0198.jpg"
     },{
-        title: "",
+        title: "в жопу",
         description: "",
         image: "0199.jpg"
     },{
-        title: "",
-        description: "",
+        title: "вадимка",
+        description: "вадюша разводюща, гемельфабр",
         image: "0200.jpg"
     },{
-        title: "",
+        title: "старушка",
         description: "",
         image: "0201.jpg"
     },{
-        title: "",
+        title: "ввпуин",
         description: "",
         image: "0202.jpg"
     },{
-        title: "",
+        title: "русс",
         description: "",
         image: "0203.jpg"
     },{
-        title: "",
+        title: "пенсреф",
         description: "",
         image: "0204.jpg"
     },{
-        title: "",
+        title: "в шаге",
         description: "",
         image: "0205.jpg"
     },{
-        title: "",
+        title: "дмб",
         description: "",
         image: "0206.jpg"
     },{
-        title: "",
+        title: "огонь",
         description: "",
         image: "0207.jpg"
     },{
-        title: "",
+        title: "на границе",
         description: "",
         image: "0208.jpg"
     },{
-        title: "",
+        title: "прорывы",
         description: "",
         image: "0209.jpg"
     },{
-        title: "",
+        title: "вундервафля",
         description: "",
         image: "0210.jpg"
     },{
-        title: "",
+        title: "цап царап",
         description: "",
         image: "0211.jpg"
     },{
-        title: "",
+        title: "радиация",
         description: "",
         image: "0212.jpg"
     },{
-        title: "",
-        description: "",
+        title: "поклонская",
+        description: "поклонская",
         image: "0213.jpg"
     },{
-        title: "",
-        description: "",
+        title: "гулаг",
+        description: "гулаг",
         image: "0214.jpg"
     },{
-        title: "",
+        title: "пара",
         description: "",
         image: "0215.jpg"
     },{
-        title: "",
+        title: "сколково",
         description: "",
         image: "0216.jpg"
     },{
-        title: "",
+        title: "кнопки",
         description: "",
         image: "0217.jpg"
     },{
