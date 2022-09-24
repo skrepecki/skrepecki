@@ -34,6 +34,16 @@ let youtube_array = [
 
 
 
+
+
+
+
+
+
+
+
+
+
 let youtube_content = ''
 for(let i = 0; i < youtube_array.length; i++) youtube_content += '<iframe width="33.33%" height="222px" src="'+youtube_array[i]+'" title="Стримы Семен Скрепецкий - Семен Скрепецкий Картины - Скрепоносный Бузотер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 document.getElementById('inframe_video_section').innerHTML = youtube_content
