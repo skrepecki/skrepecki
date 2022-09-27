@@ -12,10 +12,16 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase
 import { getFirestore, doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"
 const Application = initializeApp(firebaseConfig)
-const Firestore = getFirestore(app)
-const Auth = getAuth(app) 
+const Auth        = getAuth(Application) 
+const Firestore   = getFirestore(Application)
 
 window.__Application                    = Application
 window.__Auth                           = Auth
 window.__createUserWithEmailAndPassword = createUserWithEmailAndPassword
 window.__signInWithEmailAndPassword     = signInWithEmailAndPassword
+
+window.__Firestore                      = Firestore
+window.__doc                            = doc
+window.__getDoc                         = getDoc
+window.__collection                     = collection
+window.__getDocs                        = getDocs
