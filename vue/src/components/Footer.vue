@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12 px-5">
                     Copyright 2022 <a target="_blank" href="https://www.patreon.com/user?u=53498685">Patreon</a> <a target="_blank" href="/sitemap.xml">Sitemap</a> <a target="_blank" href="/go.xml">Go</a> 
-                    <span> Поситителей: {{ user_visited }}</span>
+                        <span> Поситителей: {{ user_visited }}</span>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 px-5">
                     <a target="_blank" href="https://www.google.com/ping?sitemap=https://skrepecki.web.app/sitemap.xml">Ping</a> / <a href="https://github.com/diseno-web-cantabria/skrepeckiy.web.app" target="_blank">Git Hub</a> / Заказать сайт <a href="https://t.me/diseno_web_cantabria" target="_blank">Telegram</a>
@@ -24,6 +24,7 @@ export default {
     data(){
       return {
           list_links : SKREP_STORAGE,          
+          
           user_visited: 'Loading..'
       }
     },
