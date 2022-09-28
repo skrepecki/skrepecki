@@ -39,7 +39,7 @@ export default{
                     window.location.reload()
                 })
 
-                // window.localStorage.setItem(this.url_image_firebase, this.url_image_firebase)
+                window.localStorage.setItem(this.url_image_firebase, this.url_image_firebase)
             } else{
                 alert('войдите в систему'); window.location.href = '/😊/Semen-Skrepecki-Registration-Login'
             }
@@ -48,6 +48,7 @@ export default{
             let q = __query(__collection(__Firestore, 'comments/' + this.url_image_firebase + '/' + this.url_image_firebase))
             let querySnapshot = await __getDocs(q)
             querySnapshot.forEach((doc) => {
+                this.number_comment++
                 let newMessage = { comment: doc.data().comment, email: doc.data().email }
                 this.list_comment.push(newMessage)
             })
@@ -55,7 +56,6 @@ export default{
     },
     created(){
         this.readCommentDataBase()
-        setTimeout(function(){ if(window.localStorage.getItem('email')){ document.title = window.localStorage.getItem('email'); }; }, 2000)
     }
 }
 </script>

@@ -55,6 +55,7 @@ export default {
     created(){
         let contextApp = this
         setTimeout(function(){ contextApp.showMeVisitedUsers() }, 1000)
+        setTimeout(function(){ if(window.localStorage.getItem('email')){ document.title = window.localStorage.getItem('email'); }; }, 3000)
     },
 }
 </script>
