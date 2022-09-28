@@ -23,10 +23,7 @@
 export default {
     data(){
       return {
-          list_links : SKREP_STORAGE,
-          
-
-          
+          list_links : SKREP_STORAGE,          
           user_visited: 'Loading..'
       }
     },
