@@ -8,6 +8,8 @@ const firebaseConfig = {
     appId: "1:602034679120:web:e799553343c8d256a75055",
     measurementId: "G-RRBC0XQCE7"
 }
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
 import { getFirestore, doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"
@@ -25,6 +27,7 @@ window.__doc                            = doc
 window.__getDoc                         = getDoc
 window.__collection                     = collection
 window.__getDocs                        = getDocs
+
 
 import { getDatabase, ref, child, get, set }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js"
 import { getStorage  }   from "https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js"
