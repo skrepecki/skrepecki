@@ -33,8 +33,8 @@ router.beforeEach(async (to) => {
   let description = 'Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'
   switch(to.name){
     case 'CustomImagePage':
-    // title       = SKREP_STORAGE[to.params.image_id].title
-    // description = SKREP_STORAGE[to.params.image_id].title + ' ' + SKREP_STORAGE[to.params.image_id].description
+      title       = SKREP_STORAGE[parseInt(to.params.image_id)].title
+      description = SKREP_STORAGE[parseInt(to.params.image_id)].title + ' ' + SKREP_STORAGE[parseInt(to.params.image_id)].description
       break
     default:
       title       = to.meta.title

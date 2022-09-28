@@ -26,7 +26,6 @@ window.__getDoc                         = getDoc
 window.__collection                     = collection
 window.__getDocs                        = getDocs
 
-
 import { getDatabase, ref, child, get, set }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js"
 import { getStorage  }   from "https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js"
 import { getAnalytics }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"
