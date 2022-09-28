@@ -34,7 +34,6 @@ export default {
         showMeVisitedUsers(){
             __get(__child(__dbRef, 'visited')).then((snapshot) => {
                 if (snapshot.exists()) {
-                    console.log('snapshot.val().count', snapshot.val().count)
                     this.user_visited = parseInt(snapshot.val().count)
                     this.add_new_visit()
                 } else {

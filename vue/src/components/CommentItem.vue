@@ -20,38 +20,42 @@ export default{
     data() {
         return {
             textarea_comment  : '',
-            list_comment      : [{comment: 'comment 123', email: 'email 456'}, {comment: 'comment', email: 'email email'}, {comment: 'comment', email: 'email email'}],
+            list_comment      : [],
             number_comment    : 0,
             url_image_firebase: SKREP_STORAGE[parseInt(this.$route.params.image_id)].image.replace('.', '').replace(' ', '').replace(' ', '') .replace(' ', '') .replace(' ', '').replace(' ', '')  
         }
     },
     methods:{
         async saveComment(){
-            alert(this.url_image_firebase)
             if(window.localStorage.getItem(this.url_image_firebase)) return
-
             if(window.localStorage.getItem('uid') && window.localStorage.getItem('email') && window.localStorage.getItem('password')){
                 let current_time = new Date().getTime();                                                                                   
-                await setDoc(doc(firestore, "comments", url_image_firebase + '/' + url_image_firebase + '/'+ current_time), {
-                    comment: comment_value,
+                await __setDoc(__doc(__Firestore, "comments", this.url_image_firebase + '/' + this.url_image_firebase + '/'+ current_time), {
+                    comment: this.textarea_comment,
                     email: window.localStorage.getItem('email'),
                     time: current_time
                 }).then(() => { 
-                    document.getElementById('textarea_comment').value = ''
-                    firebase_get_data_from_custom_image() 
                     alert('опубликовано')
+                    window.location.reload()
                 })
 
-                window.localStorage.setItem(this.url_image_firebase, this.url_image_firebase)
+                // window.localStorage.setItem(this.url_image_firebase, this.url_image_firebase)
             } else{
                 alert('войдите в систему'); window.location.href = '/😊/Semen-Skrepecki-Registration-Login'
             }
-            
-
+        },
+        async readCommentDataBase(){
+            let q = __query(__collection(__Firestore, 'comments/' + this.url_image_firebase + '/' + this.url_image_firebase))
+            let querySnapshot = await __getDocs(q)
+            querySnapshot.forEach((doc) => {
+                let newMessage = { comment: doc.data().comment, email: doc.data().email }
+                this.list_comment.push(newMessage)
+            })
         }
     },
     created(){
-
+        this.readCommentDataBase()
+        setTimeout(function(){ if(window.localStorage.getItem('email')){ document.title = window.localStorage.getItem('email'); }; }, 2000)
     }
 }
 </script>
