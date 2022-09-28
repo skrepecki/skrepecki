@@ -6,7 +6,7 @@
                     <a class="navbar-brand" v-bind:href="'/'+changeEmptyFromS(currentImageObj.title)+'/'+imageId+'/Семен-Скрепецкий-Картины/'">{{ currentImageObj.title }}</a>
                 </h2>
             </div>
-            <div class="row tm-mb-90">            
+            <div class="row tm-mb-50">            
                 <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12">
                     <img v-bind:src="'https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/'+currentImageObj.image" alt="хорошие сруские - Семен Скрепецкий - Скрепоносный Бузотер" class="img-fluid" v-bind:width="width_100">
                     <br><br>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>    
-         
+            <CommentItem />
             <div class="row tm-mb-90 tm-gallery">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" v-for="(item, index) in array_rand_id" v-bind:key="index">
                     <figure class="effect-ming tm-video-item">
@@ -68,7 +68,9 @@
     </section>
 </template>
 <script>
+    import CommentItem from '../components/CommentItem'
     export default{
+        components: { CommentItem },
         data(){
             return{
                 array_rand_id: [],

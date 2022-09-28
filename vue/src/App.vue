@@ -7,8 +7,8 @@
 </template>
 
 <script>
-  import MenuTop from './components/MenuTop.vue'
-  import Footer from './components/Footer.vue';
+  import MenuTop from './components/MenuTop'
+  import Footer from './components/Footer'
 
   export default {
     components: {

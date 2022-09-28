@@ -24,7 +24,6 @@ export default {
     data(){
       return {
           list_links : SKREP_STORAGE,          
-          
           user_visited: 'Loading..'
       }
     },
@@ -33,11 +32,30 @@ export default {
             return x.replace(' ', '-').replace(' ', '-').replace(' ', '-').replace(' ', '-').replace(' ', '-')
         },
         showMeVisitedUsers(){
-           // console.log('__dbRef', __dbRef)
+            __get(__child(__dbRef, 'visited')).then((snapshot) => {
+                if (snapshot.exists()) {
+                    console.log('snapshot.val().count', snapshot.val().count)
+                    this.user_visited = parseInt(snapshot.val().count)
+                    this.add_new_visit()
+                } else {
+                  console.log("No data available realtime database /visited");
+                }
+            }).catch((error) => {
+              console.error(error);
+            })
+        },
+        add_new_visit(){
+            let this_user_have = window.localStorage.getItem('this_user_have') || false
+            if(!this_user_have){
+                this.user_visited++
+                __set(__ref(__Database, 'visited'), { count:  this.user_visited })        
+            }
+            window.localStorage.setItem('this_user_have', 'this user is counted'   )
         }
     },
     created(){
-        this.showMeVisitedUsers()
+        let contextApp = this
+        setTimeout(function(){ contextApp.showMeVisitedUsers() }, 1000)
     },
 }
 </script>
