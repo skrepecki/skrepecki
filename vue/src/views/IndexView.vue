@@ -1,10 +1,10 @@
 <template>
-    <main class="container-fluid tm-container-content tm-mt-60" id="index_page_main_content">
+    <main class="container-fluid tm-container-content tm-mt-10" id="index_page_main_content"><br>
         <div class="row mb-4">
            <h2 class="col-6 tm-text-primary"><a class="navbar-brand" href="/"><small>Скрепецкий Картины</small></a></h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
-                    Page <input type="text" value="0" size="0" class="tm-input-paging tm-text-primary" id="current_page_value" disabled> of <span id="pages_span">pages</span>
+                    Страница <input type="text" size="0" class="tm-input-paging tm-text-primary" disabled v-bind:value="current_page"> из <span>{{count_pages}}</span>
                 </form>
             </div>
         </div>
@@ -14,7 +14,7 @@
                     <img v-bind:src="'https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/'+item.image" v-bind:alt="item.title + ' ' + item.description + ' Семен Скрепецкий Картины'" class="img-fluid index_page_list_image">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>{{ item.title }}</h2>
-                        <router-link v-bind:to="'/'+changeEmptyFromS(item.title)+'/'+index+'/Семен-Скрепецкий-Картины/'">{{ item.title }}</router-link>
+                        <router-link v-bind:to="'/'+changeEmptyFromS(item.title)+'/'+list_indices[index]+'/Семен-Скрепецкий-Картины/'">{{ item.title }}</router-link>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -45,24 +45,30 @@
             current_page    : 0,
             list_links      : [], 
             __SKREP__STORAGE: SKREP_STORAGE,
-            count_pages     : parseInt(SKREP_STORAGE.length / 11) 
+            count_pages     : parseInt(SKREP_STORAGE.length / 11),
+            list_indices    : [] 
           }
         },
         methods: {
             prepare_list_indices(__current__page){
-               if(__current__page < 0) this.current_page = this.count_pages - 1
-               if(__current__page > this.count_pages) this.current_page = 0 
+                if(__current__page < 0) this.current_page = this.count_pages - 1
+                if(__current__page > this.count_pages) this.current_page = 0 
                 let desde = 11 * this.current_page
-                this.list_links = []
-                for(let i = 0; i < 11; i++) this.list_links.push(this.__SKREP__STORAGE[desde++])
+                this.list_links   = []
+                this.list_indices = []
+                for(let i = 0; i < 11; i++) {
+                    this.list_indices.push(desde)
+                    this.list_links.push(this.__SKREP__STORAGE[desde++])
+                }
             },
-            changeEmptyFromS(x){ if(x) return x.replace(' ', '-').replace(' ', '-').replace(' ', '-'); else return '' },
+            changeEmptyFromS(x){ if(x) return x.replace(' ', '-').replace(' ', '-').replace(' ', '-').replace(' ', '-').replace(' ', '-'); else return '' },
             previosButton(){
                 this.current_page--; this.prepare_list_indices(this.current_page)
-                
+                document.querySelector('#index_page_main_content').scrollIntoView({ behavior: 'smooth' })
             },
             nextButton(){
                 this.current_page++; this.prepare_list_indices(this.current_page)
+                document.querySelector('#index_page_main_content').scrollIntoView({ behavior: 'smooth' })
             }
         },
         created(){

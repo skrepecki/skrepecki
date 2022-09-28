@@ -13,13 +13,13 @@ const routes = [{
     component: ImageCustomPage,
   },{
     path: '/:id/Semen-Skrepecki-Video', component: VideoView, name: 'VideoPage',
-    meta: {title: 'Семен Скрепецкий Стримы', description: 'Последние Видео Семен Скрепецкий, Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'}
+    meta: {title: '😋😋😋 Семен Скрепецкий Стримы 💥💥💥', description: 'Последние Видео Семен Скрепецкий, Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'}
   },{
     path: '/:id/Semen-Skrepecki-Registration-Login', component: LoginView, name: 'LoginPage',
-    meta: {title: 'Логин Семен Скрепецкий', description: 'Семен Скрепецкий, Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'}
+    meta: {title: '🍾😮😮😮🍾 Логин Семен Скрепецкий', description: 'Семен Скрепецкий, Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'}
   },{
     path: '/:id/Semen-Skrepecki-Robert-Burdai', component: RobertView, name: 'BurdaiPage',
-    meta: {title: 'Роберт Бурдай', description: 'Семен Скрепецкий, Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'}
+    meta: {title: '🐉🐲 Роберт Бурдай 🌵🎄', description: 'Семен Скрепецкий, Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'}
   }
 ]
 
@@ -33,8 +33,8 @@ router.beforeEach(async (to) => {
   let description = 'Скрепоносный Бузотер, Картины Семен Скрепецкий, Роберт Бурдай'
   switch(to.name){
     case 'CustomImagePage':
-      title       = SKREP_STORAGE[to.params.image_id].title
-      description = SKREP_STORAGE[to.params.image_id].title + ' ' + SKREP_STORAGE[to.params.image_id].description
+    // title       = SKREP_STORAGE[to.params.image_id].title
+    // description = SKREP_STORAGE[to.params.image_id].title + ' ' + SKREP_STORAGE[to.params.image_id].description
       break
     default:
       title       = to.meta.title

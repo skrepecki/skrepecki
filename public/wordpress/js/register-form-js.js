@@ -25,3 +25,49 @@ window.__doc                            = doc
 window.__getDoc                         = getDoc
 window.__collection                     = collection
 window.__getDocs                        = getDocs
+
+
+import { getDatabase, ref, child, get, set }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js"
+import { getStorage  }   from "https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js"
+import { getAnalytics }  from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"
+
+const Database  = getDatabase(Application)       
+const Storage   = getStorage(Application)             
+const Analytics = getAnalytics(Application)  
+
+window.__Database    = Database
+window.__Storage     = Storage
+window.__Analytics   = Analytics
+window.__getDatabase = getDatabase
+window.__ref         = ref
+window.__child       = child
+window.__get         = get
+window.__set         = set
+
+const dbRef = ref(getDatabase())
+window.__dbRef       = dbRef
+
+/*
+get(child(dbRef, 'visited')).then((snapshot) => {
+  if (snapshot.exists()) {
+    
+    span_visited.innerText = 'Поситителей: ' + snapshot.val().count
+    visited_value = snapshot.val().count
+    add_new_visit()
+  } else {
+    console.log("No data available realtime database /visited");
+  }
+}).catch((error) => {
+  console.error(error);
+});
+
+
+function add_new_visit(){
+    let this_user_have = window.localStorage.getItem('this_user_have') || false
+    if(!this_user_have){
+        visited_value++
+        set(ref(database, 'visited'), { count: visited_value })        
+    }
+    window.localStorage.setItem('this_user_have', 'this user is counted'   )
+}
+*/

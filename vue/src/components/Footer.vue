@@ -28,7 +28,7 @@ export default {
   },
     methods: {
         changeEmptyFromS(x){
-            return x.replace(' ', '-').replace(' ', '-').replace(' ', '-')
+            return x.replace(' ', '-').replace(' ', '-').replace(' ', '-').replace(' ', '-').replace(' ', '-')
         }
     },
 }

@@ -1,4 +1,4 @@
-let YOUTUBE_ARRAY=[
+const YOUTUBE_ARRAY = [
     "https://www.youtube.com/embed/vXishxawLL8",
     "https://www.youtube.com/embed/33PaCi8nvqA", 
     "https://www.youtube.com/embed/NJA1TlO9nwo",
