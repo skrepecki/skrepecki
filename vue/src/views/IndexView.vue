@@ -4,7 +4,7 @@
            <h2 class="col-6 tm-text-primary"><a class="navbar-brand" href="/"><small>Скрепецкий Картины</small></a></h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
-                    Страница <input type="text" size="0" class="tm-input-paging tm-text-primary" disabled v-bind:value="current_page"> из <span>{{count_pages}}</span>
+                    <input type="text" size="0" class="tm-input-paging tm-text-primary" disabled v-bind:value="current_page"> из <span>{{count_pages}}</span>
                 </form>
             </div>
         </div>
