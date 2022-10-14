@@ -1039,4 +1039,3 @@ Mr. Putin your gases smell divine we will do everything in our power to save you
          добро пожаловать на сросию
          0248.jpg
     
-]
