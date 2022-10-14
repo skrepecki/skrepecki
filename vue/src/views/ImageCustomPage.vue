@@ -8,7 +8,7 @@
             </div>
             <div class="row tm-mb-50">            
                 <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12">
-                    <img v-bind:src="'https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/'+currentImageObj.image" alt="хорошие сруские - Семен Скрепецкий - Скрепоносный Бузотер" class="img-fluid" v-bind:width="width_100">
+                    <img v-bind:src="'https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/'+currentImageObj.image" alt="хорошие сруские - Семен Скрепецкий - Скрепоносный Бузотер" class="img-fluid" v-bind:width="width_100">
                     <br><br>
                     <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
                         <a class="btn btn-primary tm-btn-prev mb-1" v-on:click="imagePreviosButton">Предыдущая</a>
@@ -22,7 +22,7 @@
                             <h5 class="tm-text-gray-dark mb-3">{{ currentImageObj.description }}</h5>
                         </div>
                         <div class="text-center mb-5">
-                            <a v-bind:href="'https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/'+currentImageObj.image" class="btn btn-primary tm-btn-big" id="download_link" download="photo_2022-09-26_16-37-03.jpg">Скачать</a>
+                            <a v-bind:href="'https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/'+currentImageObj.image" class="btn btn-primary tm-btn-big" id="download_link" download="photo_2022-09-26_16-37-03.jpg">Скачать</a>
                         </div>                    
                     </div>
                 </div>
@@ -31,7 +31,7 @@
             <div class="row tm-mb-90 tm-gallery">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" v-for="(item, index) in array_rand_id" v-bind:key="index">
                     <figure class="effect-ming tm-video-item">
-                        <img v-bind:src="'https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/'+__SKREP__STORAGE[item].image" v-bind:alt="__SKREP__STORAGE[item].title + ' ' + __SKREP__STORAGE[item].description + ' Семен Скрепецкий Картины'" class="img-fluid index_page_list_image">
+                        <img v-bind:src="'https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/'+__SKREP__STORAGE[item].image" v-bind:alt="__SKREP__STORAGE[item].title + ' ' + __SKREP__STORAGE[item].description + ' Семен Скрепецкий Картины'" class="img-fluid index_page_list_image">
                         <figcaption class="d-flex align-items-center justify-content-center">
                             <h2>{{ __SKREP__STORAGE[item].title }}</h2>
                             <router-link v-bind:to="'/'+changeEmptyFromS(__SKREP__STORAGE[item].title)+'/'+item+'/Семен-Скрепецкий-Картины/'">{{ __SKREP__STORAGE[item].title }}</router-link>
@@ -55,7 +55,7 @@
             <div class="row mb-3 tm-gallery" id="custom_image_child_items">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                     <figure class="effect-ming tm-video-item">
-                        <img src="https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/0186.jpg" alt="присяга семен скрепецкий" class="img-fluid index_page_list_image">
+                        <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/0186.jpg" alt="присяга семен скрепецкий" class="img-fluid index_page_list_image">
                         <figcaption class="d-flex align-items-center justify-content-center">
                             <h2>присяга</h2>
                             <a onclick="show_current_page_data(event)" href="image-202">присяга</a>

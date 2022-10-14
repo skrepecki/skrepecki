@@ -19,7 +19,7 @@ function set_ld_json(__title__page__){
         "@type": "Organization",
         "url": window.location.href,
         "name": __title__page__,
-        "logo": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp"
+        "logo": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp"
     }
     elScript = document.createElement('script');
     elScript.type = 'application/ld+json';
@@ -37,30 +37,30 @@ function set_ld_json(__title__page__){
          "@type": "RadioStation",
          "image": [
                 {   "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp"
+                    "url": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp"
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
+                    "url": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 165,
                     "height": 165
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
+                    "url": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 130,
                     "height": 130
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
+                    "url": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 100,
                     "height": 100
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
+                    "url": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 80,
                     "height": 80
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
+                    "url": "https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 63,
                     "height": 63
                 }

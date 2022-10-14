@@ -12,7 +12,7 @@
                         <span> Поситителей: {{ user_visited }}</span>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 px-5">
-                    <a target="_blank" href="https://www.google.com/ping?sitemap=https://skrepecki.web.app/sitemap.xml">Ping</a> / <a href="https://github.com/diseno-web-cantabria/skrepecki" target="_blank">Git Hub</a> / Заказать сайт <a href="https://t.me/diseno_web_cantabria" target="_blank">Telegram</a>
+                    <a target="_blank" href="https://www.google.com/ping?sitemap=https://skrepecki.web.app/sitemap.xml">Ping</a> / <a href="https://github.com/skrepecki/skrepecki" target="_blank">Git Hub</a> / Заказать сайт <a href="https://t.me/diseno_web_cantabria" target="_blank">Telegram</a>
                 </div>
             </div>
         </div>
