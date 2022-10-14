@@ -11,7 +11,7 @@
         <div class="row tm-mb-90 tm-gallery">
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" v-for="(item, index) in list_links" v-bind:key="index">
                 <figure class="effect-ming tm-video-item">
-                    <img v-bind:src="'https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/'+item.image" v-bind:alt="item.title + ' ' + item.description + ' Семен Скрепецкий Картины'" class="img-fluid index_page_list_image">
+                    <img v-bind:src="'https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/'+item.image" v-bind:alt="item.title + ' ' + item.description + ' Семен Скрепецкий Картины'" class="img-fluid index_page_list_image">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>{{ item.title }}</h2>
                         <router-link v-bind:to="'/'+changeEmptyFromS(item.title)+'/'+list_indices[index]+'/Семен-Скрепецкий-Картины/'">{{ item.title }}</router-link>

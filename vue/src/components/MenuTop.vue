@@ -22,7 +22,7 @@
         </div>
     </nav>
     <section class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" v-bind:style="image_class">
-        <video controls="controls" id="video-kuprin" width="40%" height="77px" style="display:none;"><source src="https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/dmitrii-kuprin.mp4" type="video/mp4"></video>  
+        <video controls="controls" id="video-kuprin" width="40%" height="77px" style="display:none;"><source src="https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/dmitrii-kuprin.mp4" type="video/mp4"></video>  
         <!-- <form class="d-flex tm-search-form">
         <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success tm-search-btn" type="submit">
@@ -38,7 +38,7 @@ export default {
   data(){
     return {
         one_class: '', two_class: '', three_class: '', fo_class: '',
-        image_class: 'background-image: url("https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner.jpg"); background-size: cover; background-repeat: no-repeat;'
+        image_class: 'background-image: url("https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/top_banner.jpg"); background-size: cover; background-repeat: no-repeat;'
     }
   },  
   computed:{
@@ -50,16 +50,16 @@ export default {
             if(navbarSupportedContent) navbarSupportedContent.classList.remove('show')
             switch(namePage){
                 case 'IndexPage' : this.one_class   = 'active'
-                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner.jpg"); background-size: cover; background-repeat: no-repeat;' 
+                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/top_banner.jpg"); background-size: cover; background-repeat: no-repeat;' 
                     break
                 case 'VideoPage' : this.two_class   = 'active'
-                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg"); background-size: cover; background-repeat: no-repeat;'
+                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/top_banner2.jpg"); background-size: cover; background-repeat: no-repeat;'
                     break
                 case 'LoginPage' : this.three_class = 'active'
-                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg"); background-size: cover; background-repeat: no-repeat;'
+                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/top_banner2.jpg"); background-size: cover; background-repeat: no-repeat;'
                     break
                 case 'BurdaiPage': this.fo_class    = 'active'
-                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/top_banner2.jpg"); background-size: cover; background-repeat: no-repeat;'
+                    this.image_class = 'background-image: url("https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/top_banner2.jpg"); background-size: cover; background-repeat: no-repeat;'
                     break
             }
             this.prepareVideoCuprin()
@@ -119,7 +119,7 @@ export default {
             "@type": "Organization",
             "url": window.location.href,
             "name": __title__,
-            "logo": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp"
+            "logo": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp"
         }
         elScript = document.createElement('script');
         elScript.type = 'application/ld+json';
@@ -134,30 +134,30 @@ export default {
          "@type": "RadioStation",
          "image": [
                 {   "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp"
+                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp"
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp",
+                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 165,
                     "height": 165
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp",
+                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 130,
                     "height": 130
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp",
+                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 100,
                     "height": 100
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp",
+                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 80,
                     "height": 80
                 },{
                     "@type": "ImageObject",
-                    "url": "https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/skrep-img/real.webp",
+                    "url": "https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/skrep-img/real.webp",
                     "width": 63,
                     "height": 63
                 }

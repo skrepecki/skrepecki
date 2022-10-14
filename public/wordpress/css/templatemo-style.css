@@ -511,7 +511,7 @@ select:not([multiple]) {
     -moz-appearance: none;
     background-position: right 15px center;
     background-repeat: no-repeat;
-    background-image: url('https://diseno-web-cantabria.github.io/skrepeckiy.web.app/public/wordpress/img/select-arrow.png');
+    background-image: url('https://diseno-web-cantabria.github.io/skrepecki/public/wordpress/img/select-arrow.png');
     padding: 14px 20px;
     padding-right: 20px;
     color: #666;
