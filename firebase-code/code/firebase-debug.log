@@ -1,0 +1,42 @@
+[debug] [2022-10-14T13:54:59.495Z] ----------------------------------------------------------------------
+[debug] [2022-10-14T13:54:59.497Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alexei work\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-14T13:54:59.497Z] CLI Version:   11.14.1
+[debug] [2022-10-14T13:54:59.497Z] Platform:      win32
+[debug] [2022-10-14T13:54:59.497Z] Node Version:  v16.17.0
+[debug] [2022-10-14T13:54:59.498Z] Time:          Fri Oct 14 2022 15:54:59 GMT+0200 (hora de verano de Europa central)
+[debug] [2022-10-14T13:54:59.498Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-14T13:54:59.501Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-10-14T13:54:59.587Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-14T13:54:59.588Z] > authorizing via signed-in user (loj.rus@gmail.com)
+[debug] [2022-10-14T13:54:59.588Z] [iam] checking project skrepecki for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-14T13:54:59.589Z] > refreshing access token with scopes: []
+[debug] [2022-10-14T13:54:59.590Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-14T13:54:59.590Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-14T13:54:59.894Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-14T13:54:59.894Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-14T13:54:59.903Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skrepecki:testIamPermissions [none]
+[debug] [2022-10-14T13:54:59.903Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/skrepecki:testIamPermissions x-goog-quota-user=projects/skrepecki
+[debug] [2022-10-14T13:54:59.903Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skrepecki:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-14T13:55:00.070Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-10-14T13:55:00.071Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-10-14T13:55:00.887Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skrepecki:testIamPermissions 200
+[debug] [2022-10-14T13:55:00.887Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skrepecki:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-14T13:55:00.892Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/skrepecki [none]
+[debug] [2022-10-14T13:55:01.331Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/skrepecki 200
+[debug] [2022-10-14T13:55:01.331Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/skrepecki {"projectId":"skrepecki","projectNumber":"602034679120","displayName":"skrepecki","name":"projects/skrepecki","resources":{"hostingSite":"skrepecki","realtimeDatabaseInstance":"skrepecki-default-rtdb","storageBucket":"skrepecki.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_2673f64b-9cd7-4f18-b677-b70923a15221"}
+[info] 
+[info] === Deploying to 'skrepecki'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-10-14T13:55:01.339Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/skrepecki/versions [none]
+[debug] [2022-10-14T13:55:01.339Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/skrepecki/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-14T13:55:02.824Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/skrepecki/versions 200
+[debug] [2022-10-14T13:55:02.824Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/skrepecki/versions {"name":"projects/602034679120/sites/skrepecki/versions/993dca4f4ccd0afe","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[skrepecki]: beginning deploy... 
+[info] i  hosting[skrepecki]: found 13 files in public 
+[debug] [2022-10-14T13:55:02.834Z] [hosting] uploading with 200 concurrency
+[debug] [2022-10-14T13:55:03.519Z] [hosting] hash cache [cHVibGlj] stored for 13 files
+[debug] [2022-10-14T13:55:03.520Z] [hosting][hash queue][FINAL] {"max":124,"min":10,"avg":26.692307692307693,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":683}
+[debug] [2022-10-14T13:55:03.521Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/602034679120/sites/skrepecki/versions/993dca4f4ccd0afe:populateFiles [none]
+[debug] [2022-10-14T13:55:03.521Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/602034679120/sites/skrepecki/versions/993dca4f4ccd0afe:populateFiles {"files":{"/manifest.json":"85eb728681be1fb016b91ab156cf27414da6c56fb7605e6b5a66123c73ede0e9","/pwa.js":"ca002da16f9a27f2d4dc9afae69312f349b4ee44e97577eeba4799deb17e26e7","/robots.txt":"d1ce291853a1ce4468af4e0e45a0525cebb09a78f675e4e546c6772e31cabb62","/sftp.php":"2080a7bfb1a54400886a325dd0c654d219e0977a83728e3600586425bb20d70f","/sitemap.xml":"59780daa5ad09776ff2e8be083c28d84c8ba250aaaaf0bedde4bd81a09f5d7d5","/js/app.7519b3a8.js":"ad4e449da96f5d187bea269d08a2abd55469f6448223c3585fad3183feca434c","/js/app.7519b3a8.js.map":"5ccfdbc899e86593ca3e5025d7bac57d22afa393368157a5370ec056c6901031","/index.html":"1a1463345dd5ee9072154c86982f217ae9bff02975389832780973d23353b700","/js/chunk-vendors.f6d4ac49.js":"20931e7526b305407df7897126a9aec817ff8421a5c4f8e0e50373976b040fe3","/favicon.png":"57670aa430c72af4623a5876369792880a4fd044eb630687ff0ba85f79fa07d9","/favicon16.png":"57670aa430c72af4623a5876369792880a4fd044eb630687ff0ba85f79fa07d9","/favicon.ico":"57670aa430c72af4623a5876369792880a4fd044eb630687ff0ba85f79fa07d9","/js/chunk-vendors.f6d4ac49.js.map":"962424ffd579975a0aeb5e5a5be02d5744cc1e4c2da3fb27f5b4769bd625eaa8"}}
