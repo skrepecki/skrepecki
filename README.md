@@ -1,3 +1,3 @@
-# СЕМЕН СКРЕПЕЦКИЙ КАРТИНЫ
-## https://skrepecki.web.app/ 
+# семен скрепецкий картины сайт
+#### https://skrepecki.web.app/ 
  
