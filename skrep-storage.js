@@ -1,4 +1,4 @@
-const SKREP_STORAGE = [
+const SKREP_STORAGE=[
     {
         title: 'Гойда!!!',
         description: 'Живопись. Семён Скрепецкий, масло, холст. 80/60',
