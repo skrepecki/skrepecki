@@ -1,5 +1,10 @@
 const SKREP_STORAGE=[
     {
+        title: 'Торгующий прахом',
+        description: 'Семён Скрепецкий. Живопись, масло, холст. 60/40 см',
+        image: 'ndice.jpg'
+    },
+    {
         title: 'Гойда!!!',
         description: 'Живопись. Семён Скрепецкий, масло, холст. 80/60',
         image: '8060.jpg'
