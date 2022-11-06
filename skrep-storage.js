@@ -1,4 +1,4 @@
-const SKREP_STORAGE=[ ebut.jpg              
+const SKREP_STORAGE=[            
     {
         title: 'Ебут Русского',
         description: 'Русского мужика долго запрягают, но быстро е6ут. Семён Скрепецкий (https://t.me/Screponos). Масло, холст, живопись, 60/40 см',
