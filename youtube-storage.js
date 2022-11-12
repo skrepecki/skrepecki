@@ -74,7 +74,7 @@ function insertPlayerInPage(){
                 firebase.analytics()
                 firebase.analytics().logEvent('tutorial_completed');
                 firebase.performance()
-                console.log('firebase semen skreckiy', firebase)
+                console.log('firebase semen skrepeckiy - SEMEN SCREPECKI SKREPECKIY IMAGE', firebase)
 }
 
 
