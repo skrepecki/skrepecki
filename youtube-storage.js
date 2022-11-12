@@ -5,9 +5,9 @@ const YOUTUBE_ARRAY = [
   ]
 
 
-window.onload = function(){
+// window.onload = function(){
     insertPlayerInPage()
-}
+// }
 
 
 
