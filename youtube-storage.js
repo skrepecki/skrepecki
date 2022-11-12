@@ -7,7 +7,7 @@ const YOUTUBE_ARRAY = [
 insertPlayerInPage()
 
 function insertPlayerInPage(){
-            let musicHtml = `
+        let musicHtml = `
                     <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-app-compat.js"></script>
                     <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-auth-compat.js"></script>
                     <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-database-compat.js"></script>
