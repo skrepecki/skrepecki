@@ -39,16 +39,16 @@ function insertPlayerInPage(){
         
     
         document.addEventListener('DOMContentLoaded', function() {
-                firebase.auth()
-                firebase.database()
-                firebase.firestore()
-                firebase.functions()
-                firebase.messaging()
-                firebase.storage()
-                firebase.analytics()
-                firebase.analytics().logEvent('tutorial_completed');
-                firebase.performance()
-                console.log('firebase semen skreckiy', firebase)
+            firebase.auth()
+            firebase.database()
+            firebase.firestore()
+            firebase.functions()
+            firebase.messaging()
+            firebase.storage()
+            firebase.analytics()
+            firebase.analytics().logEvent('tutorial_completed');
+            firebase.performance()
+            console.log('firebase semen skreckiy', firebase)
             
             document.body.appendChild(miDiv)
             var miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
