@@ -66,3 +66,15 @@ function insertPlayerInPage(){
             })
         })
 }
+
+
+
+
+
+
+
+
+
+
+
+
