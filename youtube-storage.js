@@ -36,10 +36,24 @@ function insertPlayerInPage(){
                     </style>`
         let miDiv = document.createElement('div')
         miDiv.innerHTML = musicHtml
+        document.body.appendChild(miDiv)
         
+        var miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
+        document.getElementById('imgClickPlay').addEventListener('click', (event) => {
+                event.target.style.display = 'none'
+                document.getElementById('imgClickStop').style.display = 'block'
+                if(!miAudioPlayer) miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
+                miAudioPlayer.play()
+        })
+        document.getElementById('imgClickStop').addEventListener('click', (event) => {
+                event.target.style.display = 'none'
+                document.getElementById('imgClickPlay').style.display = 'block'
+                miAudioPlayer.pause()
+                miAudioPlayer = null
+        })
     
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(() => {
+    
+         setTimeout(() => {
                 firebase.auth()
                 firebase.database()
                 firebase.firestore()
@@ -51,21 +65,7 @@ function insertPlayerInPage(){
                 firebase.performance()
                 console.log('firebase semen skreckiy', firebase)
             }, 2000)
-            document.body.appendChild(miDiv)
-            var miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
-            document.getElementById('imgClickPlay').addEventListener('click', (event) => {
-                event.target.style.display = 'none'
-                document.getElementById('imgClickStop').style.display = 'block'
-                if(!miAudioPlayer) miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
-                miAudioPlayer.play()
-            })
-            document.getElementById('imgClickStop').addEventListener('click', (event) => {
-                event.target.style.display = 'none'
-                document.getElementById('imgClickPlay').style.display = 'block'
-                miAudioPlayer.pause()
-                miAudioPlayer = null
-            })
-        })
+        
 }
 
 
