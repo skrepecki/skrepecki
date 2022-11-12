@@ -11,13 +11,13 @@ window.onload = function(){
                      <style>
                          #imgClickPlay{
                              position: fixed;
-                             right: 33px;
-                             bottom: 33px;
+                             right: 22px;
+                             bottom: 22px;
                          }
                          #imgClickStop{
                              position: fixed;
-                             right: 33px;
-                             bottom: 33px;
+                             right: 22px;
+                             bottom: 22px;
                          }
                          #imgClickPlay:hover, #imgClickStop:hover{ cursor: pointer;}
                      </style>`
