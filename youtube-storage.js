@@ -4,7 +4,7 @@ const YOUTUBE_ARRAY = [
     "https://www.youtube.com/embed/808SIcRRYYg"
   ]
 
-insertPlayerInPage()
+window.onload = function(){ insertPlayerInPage(); }
 
 function insertPlayerInPage(){
         let musicHtml = `
@@ -39,17 +39,18 @@ function insertPlayerInPage(){
         
     
         document.addEventListener('DOMContentLoaded', function() {
-            firebase.auth()
-            firebase.database()
-            firebase.firestore()
-            firebase.functions()
-            firebase.messaging()
-            firebase.storage()
-            firebase.analytics()
-            firebase.analytics().logEvent('tutorial_completed');
-            firebase.performance()
-            console.log('firebase semen skreckiy', firebase)
-            
+            setTimeout(() => {
+                firebase.auth()
+                firebase.database()
+                firebase.firestore()
+                firebase.functions()
+                firebase.messaging()
+                firebase.storage()
+                firebase.analytics()
+                firebase.analytics().logEvent('tutorial_completed');
+                firebase.performance()
+                console.log('firebase semen skreckiy', firebase)
+            }, 2000)
             document.body.appendChild(miDiv)
             var miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
             document.getElementById('imgClickPlay').addEventListener('click', (event) => {
