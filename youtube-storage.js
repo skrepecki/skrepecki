@@ -4,12 +4,7 @@ const YOUTUBE_ARRAY = [
     "https://www.youtube.com/embed/808SIcRRYYg"
   ]
 
-
-// window.onload = function(){
-    insertPlayerInPage()
-// }
-
-
+insertPlayerInPage()
 
 function insertPlayerInPage(){
             let musicHtml = `
@@ -41,23 +36,9 @@ function insertPlayerInPage(){
                     </style>`
         let miDiv = document.createElement('div')
         miDiv.innerHTML = musicHtml
-        document.body.appendChild(miDiv)
-
-        var miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
-        document.getElementById('imgClickPlay').addEventListener('click', (event) => {
-            event.target.style.display = 'none'
-            document.getElementById('imgClickStop').style.display = 'block'
-            if(!miAudioPlayer) miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
-            miAudioPlayer.play()
-        })
-        document.getElementById('imgClickStop').addEventListener('click', (event) => {
-            event.target.style.display = 'none'
-            document.getElementById('imgClickPlay').style.display = 'block'
-            miAudioPlayer.pause()
-            miAudioPlayer = null
-        })
+        
     
-            document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
                 firebase.auth()
                 firebase.database()
                 firebase.firestore()
@@ -68,5 +49,20 @@ function insertPlayerInPage(){
                 firebase.analytics().logEvent('tutorial_completed');
                 firebase.performance()
                 console.log('firebase semen skreckiy', firebase)
+            
+            document.body.appendChild(miDiv)
+            var miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
+            document.getElementById('imgClickPlay').addEventListener('click', (event) => {
+                event.target.style.display = 'none'
+                document.getElementById('imgClickStop').style.display = 'block'
+                if(!miAudioPlayer) miAudioPlayer = new Audio('https://skrepecki.github.io/skrepecki/public/wordpress/img/music.mp3')
+                miAudioPlayer.play()
             })
+            document.getElementById('imgClickStop').addEventListener('click', (event) => {
+                event.target.style.display = 'none'
+                document.getElementById('imgClickPlay').style.display = 'block'
+                miAudioPlayer.pause()
+                miAudioPlayer = null
+            })
+        })
 }
