@@ -6,8 +6,8 @@ const YOUTUBE_ARRAY = [
 
 
 window.onload = function(){
-        let musicHtml = `<img src="https://skrepecki.github.io/skrepecki/public/wordpress/img/play.png" alt="semen skrepeckiy" width="77px" id="imgClickPlay">
-                     <img src="https://skrepecki.github.io/skrepecki/public/wordpress/img/stop.png" alt="semen skrepeckiy" width="77px" id="imgClickStop" style="display:none;">
+        let musicHtml = `<img src="https://skrepecki.github.io/skrepecki/public/wordpress/img/play.png" alt="semen skrepeckiy" width="55px" id="imgClickPlay">
+                     <img src="https://skrepecki.github.io/skrepecki/public/wordpress/img/stop.png" alt="semen skrepeckiy" width="55px" id="imgClickStop" style="display:none;">
                      <style>
                          #imgClickPlay{
                              position: fixed;
