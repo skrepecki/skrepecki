@@ -13,17 +13,17 @@ window.onload = function(){
 
 function insertPlayerInPage(){
             let musicHtml = `
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-app-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-auth-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-database-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-functions-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-storage-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-performance-compat.js"></script>
-                    <script src="https://skrepecki.web.app/__/firebase/init.js?useEmulator=false"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-app-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-database-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-functions-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-storage-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/9.14.0/firebase-performance-compat.js"></script>
+                    <script defer src="https://skrepecki.web.app/__/firebase/init.js?useEmulator=false"></script>
                     <img src="https://skrepecki.github.io/skrepecki/public/wordpress/img/play.png" alt="semen skrepeckiy" width="55px" id="imgClickPlay">
                     <img src="https://skrepecki.github.io/skrepecki/public/wordpress/img/stop.png" alt="semen skrepeckiy" width="55px" id="imgClickStop" style="display:none;">
                     <style>
@@ -57,15 +57,16 @@ function insertPlayerInPage(){
             miAudioPlayer = null
         })
     
-            firebase.auth()
-            firebase.database()
-            firebase.firestore()
-            firebase.functions()
-            firebase.messaging()
-            firebase.storage()
-            firebase.analytics()
-            firebase.analytics().logEvent('tutorial_completed');
-            firebase.performance()
-
-            console.log('firebase semen skreckiy', firebase)
+            document.addEventListener('DOMContentLoaded', function() {
+                firebase.auth()
+                firebase.database()
+                firebase.firestore()
+                firebase.functions()
+                firebase.messaging()
+                firebase.storage()
+                firebase.analytics()
+                firebase.analytics().logEvent('tutorial_completed');
+                firebase.performance()
+                console.log('firebase semen skreckiy', firebase)
+            })
 }
