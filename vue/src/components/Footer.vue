@@ -3,7 +3,7 @@
         <div class="container-fluid tm-container-small">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="(item, index) in list_links" v-bind:key="index">
-                    <router-link v-bind:to="'/'+changeEmptyFromS(item.title)+'/'+index+'/Семен-Скрепецкий-Картины/'" class="tm-text-gray d-block mb-2">{{item.title}}</router-link>
+                    <a v-bind:href="'/'+changeEmptyFromS(item.title)+'/'+index+'/Семен-Скрепецкий-Картины/'" class="tm-text-gray d-block mb-2">{{item.title}}</a>
                 </div>
             </div>
             <div class="row">
