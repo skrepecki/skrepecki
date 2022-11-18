@@ -1,6 +1,7 @@
 <template>
     <section>
         <iframe width="33%" v-bind:src="item" title="Семен Скрепецкий Стримы" v-for="(item, index) in video_list" v-bind:key="index"></iframe>
+        
     </section>
 </template>
 

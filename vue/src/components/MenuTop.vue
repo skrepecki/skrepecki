@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 1000;">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="list_a_links">
                 <li id="index-page"  class="nav-item"><router-link v-bind:class="'nav-link nav-link-1 ' + one_class" to="/">Картины</router-link ></li>
-                <li id="video-page"  class="nav-item"><router-link v-bind:class="'nav-link nav-link-2 ' + two_class" to="/𓀐😝🍾😳😳😉💗💖💘🥂🍷🍸🍹🥺🍾🍾🍷😳😳😳🧐🤓😎🥸🤩🥳😏😒😞😔😟😕😫😩🥺😢😭😤😠😡🤬🤯😳🥵👖🧣🧤🧥🧦👗👘🥻🩴🩱🩲🩳👙/Semen-Skrepecki-Video">Видео</router-link ></li>
+                <li id="video-page"  class="nav-item"><router-link v-bind:class="'nav-link nav-link-2 ' + two_class" to="/stream/Semen-Skrepecki-Video">Видео</router-link ></li>
                 <li id="login-page"  class="nav-item"><router-link v-bind:class="'nav-link nav-link-3 ' + three_class" to="/😊🍼🍼😪😪🛺🚨🚔🚍🚘😊🪰🪱🪴🫐🫒🫑🫓🫔🫕🫖🧋🪨🪵🛖🥶😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😿 😾😉😌😍🥰😘😗😙😚/Semen-Skrepecki-Registration-Login">Логин</router-link ></li> 
                 <li id="robert-page" class="nav-item"><router-link v-bind:class="'nav-link nav-link-4 ' + fo_class" to="/😘🐀😜😮😮🦦🦥🐁🐀🐿🦔🐾🐉🐲🌵🎄🌲🌳🌴😬🙄😯😦😧😮😲🥱😴🤤😪😵🤐🥴🤢🤮🤧😷🤒🤕🤑🤠😈👿👹👺🤡💩👻💀☠️👽👾🤖🎃😺😸😹😻😼😽🙀/Semen-Skrepecki-Robert-Burdai">Роберт</router-link ></li>
             </ul>
