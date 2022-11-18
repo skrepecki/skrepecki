@@ -20,7 +20,9 @@
 </template>
 
 <script>
+import StreamVue from '../components/StreamVue'
 export default {
+    components: {StreamVue},
     data(){
       return {
           list_links : SKREP_STORAGE,          
