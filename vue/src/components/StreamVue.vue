@@ -1,8 +1,9 @@
 <template>
     <div>    
-        <video class="custom___video"  width="33%" controls v-for="(__url, index) in list__streams" v-bind:key="index">
-            <source v-bind:src="__url" type="video/mp4">
-        </video> 
+        <video class="custom___video"  width="33%" controls v-for="(__url, index) in list__streams" v-bind:key="index" v-bind:title="__url[0]">
+            <source v-bind:src="__url[1]" type="video/mp4">
+        </video>
+        
     </div>
 </template>
 <script>
