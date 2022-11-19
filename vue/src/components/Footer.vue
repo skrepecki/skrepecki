@@ -1,5 +1,6 @@
 <template>
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <StreamVue />
         <div class="container-fluid tm-container-small">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="(item, index) in list_links" v-bind:key="index">
@@ -25,7 +26,7 @@ export default {
     components: {StreamVue},
     data(){
       return {
-          list_links : SKREP_STORAGE,          
+          list_links  : SKREP_STORAGE,          
           user_visited: 'Loading..'
       }
     },

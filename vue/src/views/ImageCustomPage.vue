@@ -43,27 +43,6 @@
                     </div>
                 </div>
             </div>
-                
-            <!--
-            <div class="container-fluid tm-mt-60" id="images_comments_div"><div class="row mb-4"><h3 class="col-12 tm-text-primary">Комментарии</h3></div>
-                            <div class="row tm-mb-50"><div class="col-md-6 col-12">
-                            <div class="form-group"><textarea class="form-control rounded-0" placeholder="Ваш Комментарий" id="textarea_comment"></textarea></div>
-                            <div class="form-group tm-text-right"><button type="button" class="btn btn-primary" id="save_comment">Опубликовать</button></div>
-                        </div></div>
-            </div>
-            <div class="row mb-4"><h2 class="col-12 tm-text-primary">Семен Скрепецкий</h2></div>
-            <div class="row mb-3 tm-gallery" id="custom_image_child_items">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/0186.jpg" alt="присяга семен скрепецкий" class="img-fluid index_page_list_image">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>присяга</h2>
-                            <a onclick="show_current_page_data(event)" href="image-202">присяга</a>
-                        </figcaption>                    
-                    </figure>
-                </div>
-            </div>
-            -->
         </div>
     </section>
 </template>
