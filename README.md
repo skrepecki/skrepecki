@@ -1,6 +1,6 @@
-# СЕМЕН СКРЕПЕЦКИЙ 👋
+# СЕМЕН СКРЕПЕЦКИЙ
 
-# https://skrepsite.web.app/
+## https://skrepsite.web.app/ 👋
 
 **skrepecki/skrepecki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile..
 
