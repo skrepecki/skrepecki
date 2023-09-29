@@ -1,4 +1,4 @@
-### СЕМЕН СКРЕПЕЦКИЙ КАРТИНЫ 👋
+# СЕМЕН СКРЕПЕЦКИЙ 👋
 
 # https://skrepsite.web.app/
 
