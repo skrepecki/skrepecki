@@ -1,3 +1,4 @@
+/*
 function setCannonicalPage(){
   let url = location.href    
   console.log('url', url)
@@ -10,7 +11,7 @@ function setCannonicalPage(){
 }
 setCannonicalPage()
 setInterval(() => setCannonicalPage(), 100)
-
+*/
 
 
 
