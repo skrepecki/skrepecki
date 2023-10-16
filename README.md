@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-###### https://skrepsite.web.app/Розовые-единороги/345
-###### https://skrepsite.web.app/Закрашенная-картина/344
-###### https://skrepsite.web.app/Женя-Ройзман/343
-###### https://skrepsite.web.app/леша-анальный/342
+###### https://skrepsite.web.app/Розовые-единороги/344
+###### https://skrepsite.web.app/Закрашенная-картина/343
+###### https://skrepsite.web.app/Женя-Ройзман/342
+###### https://skrepsite.web.app/леша-анальный/341
