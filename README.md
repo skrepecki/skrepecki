@@ -14,6 +14,11 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+###### https://skrepsite.web.app/Концерт-пресвятого-Кабзона/350
+###### https://skrepsite.web.app/Во-славу-русского-рейха/349
+###### https://skrepsite.web.app/Говорящий-с-ветром/346
+###### https://skrepsite.web.app/Валерий-Соловей/347
+###### https://skrepsite.web.app/Сверхлюди/348
 ###### https://skrepsite.web.app/Святая-троица-РПЦ/345
 ###### https://skrepsite.web.app/Розовые-единороги/344
 ###### https://skrepsite.web.app/Закрашенная-картина/343
