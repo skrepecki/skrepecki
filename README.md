@@ -8,4 +8,4 @@
 
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-<a href='https://code.visualstudio.com/'><img width="10%" alt='Visual Studio Code' src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg"></a>
+<a href='https://code.visualstudio.com/'><img width="10%" alt='Visual Studio Code' src="https://raw.githubusercontent.com/skrepecki/skrepecki/main/public/wordpress/img/1.png)https://raw.githubusercontent.com/skrepecki/skrepecki/main/public/wordpress/img/1.png"></a>
