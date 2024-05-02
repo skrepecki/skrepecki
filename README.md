@@ -1,5 +1,5 @@
-# Картинная галерея Семёна Скрепецкого!
-# https://skrepsite.web.app/
+### Семен Скрепецкий 
+### https://skrepsite.web.app/
 
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Kto-ty-Semyon-Skrepetskij-1131x1280.jpg" width="100%"><br>
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/IPSOna-ot-Skrepetskogo-844x1280.jpg"  width="100%"><br>
