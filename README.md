@@ -10,7 +10,12 @@
 ### !!! также, прошу заметить, мое мнение может не совпадать с мнением автора картин !!!
 
 
+
 <img width="100%" alt='Visual Studio Code' src="https://raw.githubusercontent.com/skrepecki/skrepecki/main/public/wordpress/img/1.png">
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Kto-ty-Semyon-Skrepetskij-1131x1280.jpg" width="100%"><br>
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/IPSOna-ot-Skrepetskogo-844x1280.jpg"  width="100%"><br>
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Biological-waste-1280x1165.jpg"  width="100%"><br>
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/YAjtsa-Zelenskogo-845x1280.jpg"  width="100%"><br>
 
 
 
