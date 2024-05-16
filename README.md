@@ -1,6 +1,5 @@
-### Семен Скрепецкий 
 ### https://skrepsite.web.app/
-# Картинная галерея Семёна Скрепецкого
+# Семен Скрепецкий 
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/photo_5343798116865924271_y.jpg" width="100%"><br>
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Den-pobedy-855x1280.jpg"  width="100%"><br>
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/On-818x1280.jpg"  width="100%"><br>
