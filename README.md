@@ -1,6 +1,11 @@
 ### Семен Скрепецкий 
 ### https://skrepsite.web.app/
 # Картинная галерея Семёна Скрепецкого
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/photo_5343798116865924271_y.jpg" width="100%"><br>
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/On-818x1280.jpg"  width="100%"><br>
+<img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Vzglyad-880x1280.jpg"  width="100%"><br>
+
+
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Kto-ty-Semyon-Skrepetskij-1131x1280.jpg" width="100%"><br>
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/IPSOna-ot-Skrepetskogo-844x1280.jpg"  width="100%"><br>
 <img src="https://skrepecki.github.io/skrepecki/public/wordpress/skrep-img/Biological-waste-1280x1165.jpg"  width="100%"><br>
