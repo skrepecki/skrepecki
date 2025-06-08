@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /sftp.php
-
-Host: skrepecki.web.app
-Sitemap: https://skrepecki.web.app/sitemap.xml
